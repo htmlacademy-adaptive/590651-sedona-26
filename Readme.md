@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Alexandr Gorodov](https://up.htmlacademy.ru/adaptive/26/user/590651).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
