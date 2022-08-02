@@ -1,0 +1,84 @@
+.advantages {
+  &__header {
+    padding: 32px 18px 16px;
+  }
+
+  &__header-title {
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    .list();
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
+    justify-content: center;
+  }
+
+  &__item {
+    .flex();
+    padding: 54px 18px 40px;
+  }
+
+  &__description {
+    .text();
+  }
+
+  &__number {
+    .text();
+  }
+
+  &__list-city {
+    background-image: url("../img/down-directed-triangle.svg");
+    background-position: top;
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+
+  &__item-image {
+    padding: 0;
+    align-items: center;
+  }
+
+  &__item-illustrated {
+    .text(left);
+    .flex(row);
+    padding: 54px 0 40px;
+    padding-right: 18px;
+  }
+
+  &__item-illustrated__wrapper {
+    .flex();
+    align-items: flex-start;
+  }
+
+  &__item-illustrated::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    background-position: left;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &__item-illustrated--apartments::before {
+    background-image: url("../img/apartments.svg");
+  }
+
+  &__item-illustrated--food::before {
+    background-image: url("../img/food.svg");
+  }
+
+  &__item-illustrated--souvenirs::before {
+    background-image: url("../img/souvenirs.svg");
+  }
+
+  .advantages__wrapper--background-blue {
+    background-color: @main-color;
+  }
+
+  .advantages__wrapper--background-gray {
+    background-color: #eeeeee;
+  }
+}
