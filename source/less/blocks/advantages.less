@@ -1,22 +1,21 @@
 .advantages {
   &__header {
-    padding: 32px 18px 16px;
+    padding: 32px 24px 16px;
   }
 
   &__header-title {
+    .text();
     margin-bottom: 35px;
   }
 
   &__list {
     .list();
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
-    justify-content: center;
+    .flex();
   }
 
   &__item {
     .flex();
-    padding: 54px 18px 40px;
+    padding: 62px 18px 34px;
   }
 
   &__description {
@@ -25,6 +24,7 @@
 
   &__number {
     .text();
+    margin: 10px 0 15px;
   }
 
   &__list-city {
@@ -39,16 +39,25 @@
     align-items: center;
   }
 
+  &__list--illustrated {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
+    row-gap: 24px;
+    justify-content: center;
+    padding: 25px 18px 50px;
+  }
+
   &__item-illustrated {
     .text(left);
-    .flex(row);
-    padding: 54px 0 40px;
-    padding-right: 18px;
+    display: grid;
+    grid-auto-flow: column;
   }
 
   &__item-illustrated__wrapper {
-    .flex();
-    align-items: flex-start;
+    display: grid;
+    justify-items: start;
+    grid-template-rows: 1.3fr 2.2fr;
+    align-items: center;
   }
 
   &__item-illustrated::before {
@@ -74,11 +83,15 @@
     background-image: url("../img/souvenirs.svg");
   }
 
-  .advantages__wrapper--background-blue {
+  &-place {
+    padding: 24px 18px 0;
+  }
+
+  &__list--background-blue {
     background-color: @main-color;
   }
 
-  .advantages__wrapper--background-gray {
+  &__list--background-gray {
     background-color: #eeeeee;
   }
 }

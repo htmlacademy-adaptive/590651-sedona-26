@@ -128,7 +128,12 @@
         <div class="presentation__wrapper">
           <h2 class="presentation__title title">Все еще сомневаетесь?</h2>
           <p class="presentation__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="presentation__video" src="img/catalog-video-mobile.jpg" width="280" height="177" alt="Видео-презентация.">
+          <div class="presentation__video">
+            <img class="presentation__video-image" src="img/catalog-video-mobile.jpg" width="280" height="177" alt="Видео-презентация.">
+            <button class="presentation__video-button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -180,5 +185,17 @@
         </a>
       </div>
     </footer>
+    <script>
+      const burgerToggle = document.querySelector('.navigation-toggle');
+      const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
+      const mobileNav = document.querySelector('.navigation__list');
+
+      burgerToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('navigation__list--opened');
+        burgerToggleLines[1].classList.toggle('navigation-toggle__line__open-first');
+        burgerToggleLines[0].classList.toggle('navigation-toggle__line__open-second');
+        burgerToggleLines[2].classList.toggle('navigation-toggle__line__open-third');
+      });
+    </script>
   </body>
 </html>

@@ -206,5 +206,17 @@
         </a>
       </div>
     </footer>
+    <script>
+      const burgerToggle = document.querySelector('.navigation-toggle');
+      const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
+      const mobileNav = document.querySelector('.navigation__list');
+
+      burgerToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('navigation__list--opened');
+        burgerToggleLines[1].classList.toggle('navigation-toggle__line__open-first');
+        burgerToggleLines[0].classList.toggle('navigation-toggle__line__open-second');
+        burgerToggleLines[2].classList.toggle('navigation-toggle__line__open-third');
+      });
+    </script>
   </body>
 </html>

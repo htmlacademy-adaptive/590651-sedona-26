@@ -1,0 +1,31 @@
+.navigation-toggle {
+  display: flex;
+  height: 22px;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+
+  &__line {
+    display: block;
+    width: 23px;
+    height: 4px;
+    background-color: @main-color;
+    transition: 0.2s;
+  }
+
+  &e__line__open-first {
+    transform: translateX(100px);
+  }
+
+  &__line__open-second {
+    transform: rotate(45deg) translateY(6px);
+    background-color: @white;
+  }
+
+  &__line__open-third {
+    transform: rotate(-45deg) translateY(-6px);
+    background-color: @white;
+  }
+}
