@@ -36,10 +36,12 @@
         </div>
       </nav>
     </header>
-    <main class="page-main page-main__form">
-      <h1 class="visually-hidden">Форма отзыва.</h1>
-      <div class="page-main__form-intro">
-        <img class="page-main__form-intro__image" src="img/form-head-title.svg" width="229" height="39" alt="Седона">
+    <main class="page-main">
+      <div class="page-main__secondary">
+        <h1 class="visually-hidden">Форма отзыва.</h1>
+        <div class="page-main__secondary__intro">
+          <img class="page-main__secondary__intro-image" src="img/form-head-title.svg" width="229" height="39" alt="Седона">
+        </div>
       </div>
       <section class="form">
         <header class="form__header">
@@ -52,15 +54,15 @@
             <div class="feedback-form__wrapper">
               <label class="feedback-form__wrapper-item form-item" for="firstname">
                 <span class="form-item__name">Имя*:</span>
-                <input class="form-item__input" type="text" id="firstname" name="Имя" value="Пётр" required>
+                <input class="form-item__input" type="text" id="firstname" name="Имя" value="Пётр"  placeholder="Имя" required>
               </label>
               <label class="feedback-form__wrapper-item form-item" for="lastname">
                 <span class="form-item__name">Фамилия*:</span>
-                <input class="form-item__input" type="text" id="lastname" name="Фамилия" value="Пустота" required>
+                <input class="form-item__input" type="text" id="lastname" name="Фамилия" value="Пустота"  placeholder="Фамилия" required>
               </label>
               <label class="feedback-form__wrapper-item form-item" for="middlename">
                 <span class="form-item__name">Отчество:</span>
-                <input class="form-item__input" type="text" id="middlename" name="Отчество" value="Викторович">
+                <input class="form-item__input" type="text" id="middlename" name="Отчество" value="Викторович" placeholder="Отчество" >
               </label>
             </div>
           </fieldset>
@@ -90,17 +92,17 @@
           <fieldset class="feedback-form__fieldset feedback-form__fieldset-impression">
             <legend class="feedback-form__fieldset-name">Ваше общее впечатление:</legend>
             <div class="feedback-form__wrapper">
-              <label class="feedback-form__wrapper-item form-item form-item__radio" for="impression-positive">
+              <label class="feedback-form__wrapper-item form-item form-item--radio" for="impression-positive">
                 <input class="radio visually-hidden" type="radio" value="Скорее положительное" name="Общее впечатление" id="impression-positive" checked>
-                <span class="form-item__input form-item__input-radio form-item__input-radio--checked"></span>
+                <span class="form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Скорее положительное</span>
               </label>
-              <label class="feedback-form__wrapper-item form-item form-item__radio" for="impression-negative">
+              <label class="feedback-form__wrapper-item form-item form-item--radio" for="impression-negative">
                 <input class="radio visually-hidden" type="radio" value="Скорее отрицательное" name="Общее впечатление" id="impression-negative">
                 <span class="form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Скорее отрицательное</span>
               </label>
-              <label class="feedback-form__wrapper-item form-item form-item__radio" for="impression-neutral">
+              <label class="feedback-form__wrapper-item form-item form-item--radio" for="impression-neutral">
                 <input class="radio visually-hidden" type="radio" value="Затрудняюсь ответить" name="Общее впечатление" id="impression-neutral">
                 <span class="form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Затрудняюсь ответить</span>
@@ -110,23 +112,23 @@
           <fieldset class="feedback-form__fieldset feedback-form__fieldset-checkbox">
             <legend class="feedback-form__fieldset-name">Посещенные достопримечательности:</legend>
             <div class="feedback-form__wrapper">
-              <label class="feedback-form__wrapper-item form-item form-item__checkbox" for="devil-bridge">
-                <input class="visually-hidden" type="checkbox" id="devil-bridge" name="Мост Дьявола" checked>
+              <label class="checkbox feedback-form__wrapper-item form-item form-item--checkbox" for="devil-bridge">
+                <input class="checkbox visually-hidden" type="checkbox" id="devil-bridge" name="Мост Дьявола" checked>
                 <span class="form-item__input form-item__input-checkbox"></span>
                 <span class="form-item__name form-item__name--bold">Мост Дьявола</span>
               </label>
-              <label class="feedback-form__wrapper-item form-item form-item__checkbox" for="bell-mountain">
-                <input class="visually-hidden" type="checkbox" id="bell-mountain" name="Гора-Колокол" checked>
+              <label class="feedback-form__wrapper-item form-item form-item--checkbox" for="bell-mountain">
+                <input class="checkbox visually-hidden" type="checkbox" id="bell-mountain" name="Гора-Колокол" checked>
                 <span class="form-item__input form-item__input-checkbox"></span>
                 <span class="form-item__name form-item__name--bold">Гора-Колокол</span>
               </label>
-              <label class="feedback-form__wrapper-item form-item form-item__checkbox" for="slide-park">
-                <input class="visually-hidden" type="checkbox" id="slide-park" name="Слайд-парк" checked>
+              <label class="feedback-form__wrapper-item form-item form-item--checkbox" for="slide-park">
+                <input class="checkbox visually-hidden" type="checkbox" id="slide-park" name="Слайд-парк" checked>
                 <span class="form-item__input form-item__input-checkbox"></span>
                 <span class="form-item__name form-item__name--bold">Слайд-парк</span>
               </label>
-              <label class="feedback-form__wrapper-item form-item form-item__checkbox" for="red-rocks">
-                <input class="visually-hidden" type="checkbox" id="red-rocks" name="Красные скалы">
+              <label class="feedback-form__wrapper-item form-item form-item--checkbox" for="red-rocks">
+                <input class="checkbox visually-hidden" type="checkbox" id="red-rocks" name="Красные скалы">
                 <span class="form-item__input form-item__input-checkbox"></span>
                 <span class="form-item__name form-item__name--bold">Красные скалы</span>
               </label>
@@ -135,7 +137,7 @@
           <fieldset class="feedback-form__fieldset feedback-form__fieldset-freetext">
             <legend class="feedback-form__fieldset-name">Опишите свои эмоции:</legend>
             <div class="feedback-form__wrapper">
-              <label class="feedback-form__wrapper-item form-item" for="review-text">
+              <label class="feedback-form__wrapper-item feedback-form__wrapper-item__textarea form-item" for="review-text">
                 <textarea class="form-item__input form-item__input-textarea" name="Отзыв" id="review-text" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </div>
@@ -143,22 +145,6 @@
           <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
           <span class="feedback-form__explanation description description--gray">* — Обязательные поля</span>
         </form>
-        <div class="modal-container">
-          <div class="modal-container__item modal-container__item-error">
-            <div class="modal-container__item-wrapper">
-              <h3 class="modal-container__title title">Что-то пошло не так!</h3>
-              <p class="modal-container__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              <button class="modal-container__button button" type="button">Ок</button>
-            </div>
-          </div>
-          <div class="modal-container__item modal-container__item-success">
-            <div class="modal-container__item-wrapper">
-              <h3 class="modal-container__title title">Ваш отзыв отправлен!</h3>
-              <p class="modal-container__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-              <button class="modal-container__button button" type="button">Закрыть окно</button>
-            </div>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -209,6 +195,20 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal-container__item modal-container__item-wrapper modal-container__item-error">
+        <h3 class="modal-container__title title">Что-то пошло не так!</h3>
+        <p class="modal-container__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-container__button button" type="button">Ок</button>
+      </div>
+      <div class="modal-container__item modal-container__item-wrapper modal-container__item-success">
+        <h3 class="modal-container__title title">Ваш отзыв отправлен!</h3>
+        <p class="modal-container__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-container__inner-wrapper modal-container__inner-wrapper--grey">
+          <button class="modal-container__button button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
     <script>
       const burgerToggle = document.querySelector('.navigation-toggle');
       const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');

@@ -1,0 +1,31 @@
+.presentation {
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__description {
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+
+  &__video {
+    position: relative;
+    display: block;
+
+    &-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 48px;
+      height: 54px;
+      border: none;
+      transform: translate3d(-50%, -50%, 0);
+      background-color: transparent;
+      background-image: url("../img/play-button.svg");
+      background-size: 48px 54px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
