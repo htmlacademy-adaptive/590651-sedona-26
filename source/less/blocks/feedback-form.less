@@ -8,6 +8,9 @@
     margin-bottom: 24px;
     flex-direction: column;
     border: none;
+  }
+
+  &__fieldset:not(:last-of-type) {
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -32,17 +35,19 @@
     margin-bottom: 16px;
   }
 
-  &__wrapper-item__textarea {
-    max-width: 280px;
+  &__button-wrapper {
+    .flex();
+    padding: 0 20px;
+    align-items: center;
   }
 
-  &__button {
+  &__submit {
     padding: 0 48px;
   }
 
   &__explanation {
     display: block;
-    text-align: right;
+    align-self: end;
     font-size: 12px;
     line-height: 21px;
     color: rgba(51, 51, 51, 0.6);
