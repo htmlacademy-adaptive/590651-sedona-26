@@ -719,7 +719,7 @@
 }
 .modal-success {
   position: fixed;
-  top: 50%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   width: 320px;
