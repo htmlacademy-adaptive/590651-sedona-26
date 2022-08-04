@@ -579,6 +579,12 @@
   display: flex;
   flex-direction: column;
 }
+.catalog-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  margin: auto;
+}
 .catalog-card__content-wrapper {
   display: flex;
   flex-direction: column;
@@ -622,8 +628,8 @@
   align-items: center;
 }
 .catalog__item {
-  padding: 24px 20px;
   border-bottom: 1px solid #e5e5e5;
+  align-self: stretch;
 }
 .presentation__wrapper {
   padding: 20px;
