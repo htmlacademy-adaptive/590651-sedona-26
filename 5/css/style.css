@@ -14,19 +14,6 @@
   font-weight: 700;
   margin: 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .advantages__header {
   padding: 32px 24px 16px;
 }
@@ -72,7 +59,7 @@
 .advantages__list--illustrated {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
-  row-gap: 24px;
+  row-gap: 16px;
   justify-content: center;
   padding: 25px 18px 50px;
 }
@@ -87,8 +74,12 @@
 .advantages__item-illustrated__wrapper {
   display: grid;
   justify-items: start;
-  grid-template-rows: 1.3fr 2.2fr;
-  align-items: center;
+  grid-template-rows: auto 1fr;
+}
+.advantages__item-illustrated__title {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: left;
 }
 .advantages__item-illustrated::before {
   display: block;
@@ -139,6 +130,19 @@
   width: 100%;
   margin-top: 24px;
   background-color: #d6d6d6;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .booking__wrapper {
   display: flex;
@@ -547,7 +551,20 @@
   outline: none;
 }
 .social-item__link {
-  color: #81B3D2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+.social-item__link:hover {
+  background-color: #669ec0;
+}
+.social-item__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 .modal-container__item-wrapper {
   display: flex;
@@ -588,6 +605,9 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.catalog-card__image {
+  display: block;
+}
 .catalog-card__title {
   margin: 15px 0;
 }
@@ -597,13 +617,21 @@
 }
 .catalog-card__like-button {
   display: flex;
+  padding: 0;
   border: none;
   align-items: center;
   background-color: transparent;
+  cursor: pointer;
 }
 .catalog-card__like-button__icon {
   margin-right: 14px;
   opacity: 0.3;
+}
+.catalog-card__like-button__icon:hover {
+  opacity: 1;
+}
+.catalog-card__like-button__icon:active {
+  opacity: 0.6;
 }
 .catalog-card__likes-amount {
   font-size: 14px;
@@ -655,5 +683,13 @@
   background-size: 48px 54px;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.presentation__video-button:hover {
+  opacity: 1;
+}
+.presentation__video-button:active {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=style.css.map */
