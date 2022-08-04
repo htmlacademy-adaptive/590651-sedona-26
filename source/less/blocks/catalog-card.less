@@ -11,6 +11,10 @@
     align-items: flex-start;
   }
 
+  &__image {
+    display: block;
+  }
+
   &__title {
     margin: 15px 0;
   }
@@ -22,14 +26,24 @@
 
   &__like-button {
     display: flex;
+    padding: 0;
     border: none;
     align-items: center;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &__like-button__icon {
     margin-right: 14px;
     opacity: 0.3;
+  }
+
+  &__like-button__icon:hover {
+    opacity: 1;
+  }
+
+  &__like-button__icon:active {
+    opacity: 0.6;
   }
 
   &__likes-amount {

@@ -22,6 +22,10 @@
     text-align: left;
   }
 
+  // &__title {
+  //   text-align: left;
+  // }
+
   &__number {
     .text();
     margin: 10px 0 15px;
@@ -42,7 +46,7 @@
   &__list--illustrated {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
-    row-gap: 24px;
+    row-gap: 16px;
     justify-content: center;
     padding: 25px 18px 50px;
   }
@@ -56,8 +60,13 @@
   &__item-illustrated__wrapper {
     display: grid;
     justify-items: start;
-    grid-template-rows: 1.3fr 2.2fr;
-    align-items: center;
+    grid-template-rows: auto 1fr;
+  }
+
+  &__item-illustrated__title {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: left;
   }
 
   &__item-illustrated::before {
