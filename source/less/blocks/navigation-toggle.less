@@ -1,0 +1,39 @@
+.navigation-toggle {
+  display: flex;
+  height: 22px;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation-toggle__line {
+  display: block;
+  width: 23px;
+  height: 4px;
+  background-color: @main-color;
+  transition: 0.3s;
+}
+
+.navigation-toggle__line-first--open {
+  transform: translateX(100px);
+}
+
+.navigation-toggle__line-second--open {
+  transform: rotate(45deg) translateY(6px);
+  background-color: @white;
+}
+
+.navigation-toggle__line-third--open {
+  transform: rotate(-45deg) translateY(-6px);
+  background-color: @white;
+}

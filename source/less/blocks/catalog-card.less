@@ -1,0 +1,53 @@
+.catalog-card {
+  .flex();
+}
+
+.catalog-card__wrapper {
+  padding: 24px 20px;
+  margin: auto;
+}
+
+.catalog-card__content-wrapper {
+  .flex();
+  align-items: flex-start;
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog-card__title {
+  margin: 15px 0;
+}
+
+.catalog-card__author {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.catalog-card__like-button {
+  display: flex;
+  padding: 0;
+  border: none;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.catalog-card__like-button__icon {
+  margin-right: 14px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.catalog-card__likes-amount {
+  font-size: 14px;
+  line-height: 21px;
+}

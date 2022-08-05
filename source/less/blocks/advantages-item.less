@@ -1,0 +1,28 @@
+.advantages-item__text {
+  padding: 0;
+
+  &--white {
+    color: @white;
+  }
+}
+
+.advantages-item {
+  &--bordered {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--bordered:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
+  &--bordered:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-top: 24px;
+    background-color: #d6d6d6;
+  }
+}
