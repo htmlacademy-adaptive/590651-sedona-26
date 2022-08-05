@@ -10,7 +10,9 @@
 
 .footer__social {
   .list();
+  padding: 0 40px;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 40px;
   justify-content: center;
@@ -25,4 +27,12 @@
   color: #000000;
   font-weight: 400;
   text-decoration: none;
+
+  &:hover {
+    color: @main-color;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

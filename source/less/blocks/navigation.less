@@ -44,10 +44,29 @@
 }
 
 .navigation__link {
+  display: block;
   color: @white;
   font-family: @main-font;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    & {
+      color: #000000;
+    }
+
+    &:hover {
+      color: @main-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--current {
+      color: #766357;
+    }
+  }
 }
