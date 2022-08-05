@@ -7,15 +7,6 @@
   background-color: transparent;
   border: none;
 
-
-  &__line {
-    display: block;
-    width: 23px;
-    height: 4px;
-    background-color: @main-color;
-    transition: 0.3s;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -23,18 +14,26 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &__line-first--open {
-    transform: translateX(100px);
-  }
+.navigation-toggle__line {
+  display: block;
+  width: 23px;
+  height: 4px;
+  background-color: @main-color;
+  transition: 0.3s;
+}
 
-  &__line-second--open {
-    transform: rotate(45deg) translateY(6px);
-    background-color: @white;
-  }
+.navigation-toggle__line-first--open {
+  transform: translateX(100px);
+}
 
-  &__line-third--open {
-    transform: rotate(-45deg) translateY(-6px);
-    background-color: @white;
-  }
+.navigation-toggle__line-second--open {
+  transform: rotate(45deg) translateY(6px);
+  background-color: @white;
+}
+
+.navigation-toggle__line-third--open {
+  transform: rotate(-45deg) translateY(-6px);
+  background-color: @white;
 }

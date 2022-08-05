@@ -1,55 +1,52 @@
 .feedback-form {
   padding-bottom: 34px;
+}
 
-  &__fieldset {
-    display: flex;
-    padding: 0 20px;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    flex-direction: column;
-    border: none;
-  }
+.feedback-form__fieldset {
+  .flex();
+  padding: 0 20px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border: none;
 
-  &__fieldset:not(:last-of-type) {
+  &:not(:last-of-type) {
     border-bottom: 1px solid #e5e5e5;
   }
+}
 
-  &__fieldset-name {
-    .text();
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
+.feedback-form__fieldset-name {
+  .text();
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.feedback-form__wrapper {
+  .flex();
+}
 
-  &__wrapper-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.feedback-form__item-wrapper {
+  .flex();
+  align-items: flex-start;
 
-  &__wrapper-item:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 16px;
   }
+}
 
-  &__button-wrapper {
-    .flex();
-    padding: 0 20px;
-    align-items: center;
-  }
+.feedback-form__button-wrapper {
+  .flex();
+  padding: 0 20px;
+  align-items: center;
+}
 
-  &__submit {
-    padding: 0 48px;
-  }
+.feedback-form__submit {
+  padding: 0 48px;
+}
 
-  &__explanation {
-    display: block;
-    align-self: end;
-    font-size: 12px;
-    line-height: 21px;
-    color: rgba(51, 51, 51, 0.6);
-  }
+.feedback-form__explanation {
+  display: block;
+  align-self: end;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
 }
