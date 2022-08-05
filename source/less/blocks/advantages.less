@@ -1,0 +1,95 @@
+.advantages__header {
+  padding: 32px 24px 16px;
+}
+
+.advantages__header-title {
+  .text();
+  margin-bottom: 35px;
+}
+
+.advantages__list {
+  .list();
+
+  &--illustrated {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
+    row-gap: 16px;
+    justify-content: center;
+    padding: 25px 18px 50px;
+  }
+
+  &--background-blue {
+    background-color: @main-color;
+  }
+
+  &--background-gray {
+    background-color: #eeeeee;
+  }
+}
+
+.advantages__list-city {
+  background-image: url("../img/down-directed-triangle.svg");
+  background-position: top;
+  background-size: 768px 37px;
+  background-repeat: no-repeat;
+}
+
+.advantages__item {
+  .flex();
+  padding: 62px 18px 34px;
+}
+
+.advantages__number {
+  .text();
+  margin: 10px 0 15px;
+}
+
+.advantages__item-image {
+  padding: 0;
+  align-items: center;
+}
+
+.advantages__item-illustrated__wrapper {
+  display: grid;
+  justify-items: start;
+  grid-template-rows: auto 1fr;
+}
+
+.advantages__item-illustrated {
+  .text(left);
+  display: grid;
+  grid-auto-flow: column;
+
+  &::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    background-position: left;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--apartments::before {
+    background-image: url("../img/apartments.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/food.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/souvenirs.svg");
+  }
+}
+
+.advantages__item-illustrated__title {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.advantages__item-illustrated__text {
+  .text(left);
+}
