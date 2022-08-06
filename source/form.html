@@ -214,52 +214,7 @@
         </div>
       </div>
     </div>
-    <script>
-      // Burger menu toggle
-      const burgerToggle = document.querySelector('.navigation-toggle');
-      const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
-      const mobileNav = document.querySelector('.navigation__list');
-
-      burgerToggle.addEventListener('click', () => {
-        mobileNav.classList.toggle('navigation__list--opened');
-        burgerToggleLines[0].classList.toggle('navigation-toggle__line-first--open');
-        burgerToggleLines[1].classList.toggle('navigation-toggle__line-second--open');
-        burgerToggleLines[2].classList.toggle('navigation-toggle__line-third--open');
-      });
-
-      // Form submit and error modals
-      const form = document.querySelector('.feedback-form');
-      const formButton = document.querySelector('.feedback-form__submit')
-      let modals = document.querySelectorAll('.modal-container');
-      let modalError = document.querySelector('.error');
-      let modalSuccess = document.querySelector('.success');
-      const eMail = document.getElementById('email');
-      const phone = document.getElementById('phone');
-
-      formButton.onclick = function () {
-        form.addEventListener('submit', function () {
-          modalSuccess.classList.add('modal-container--open');
-        });
-        if (!eMail.validity.valid || !phone.validity.valid) {
-          modalError.classList.add('modal-container--open');
-        }
-      };
-      modals.forEach(element => {
-        document.addEventListener('keydown', function(e) {
-          let keyCode = e.keyCode;
-          if (keyCode === 27) {
-            element.classList.remove('modal-container--open');
-          }
-        });
-      });
-      let modalCloseButtons = document.querySelectorAll('.modal-container__button');
-      for (const button of modalCloseButtons) {
-        button.onclick = function() {
-          modals.forEach(element => {
-            element.classList.remove('modal-container--open');
-          });
-        }
-      }
-    </script>
+    <script type="text/javascript" src="js/burger-menu.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
   </body>
 </html>
