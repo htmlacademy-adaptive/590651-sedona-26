@@ -93,7 +93,7 @@
           </fieldset>
           <fieldset class="feedback-form__fieldset feedback-form__fieldset-impression">
             <legend class="feedback-form__fieldset-name">Ваше общее впечатление:</legend>
-            <div class="feedback-form__wrapper">
+            <div class="feedback-form__wrapper feedback-form__wrapper--impression">
               <label class="feedback-form__item-wrapper form-item form-item--radio" for="impression-positive">
                 <input class="radio visually-hidden" type="radio" value="Скорее положительное" name="Общее впечатление" id="impression-positive" checked>
                 <span class="form-item__input form-item__input-radio"></span>
@@ -111,9 +111,9 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset-checkbox">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset-places">
             <legend class="feedback-form__fieldset-name">Посещенные достопримечательности:</legend>
-            <div class="feedback-form__wrapper">
+            <div class="feedback-form__wrapper feedback-form__wrapper--places">
               <label class="checkbox feedback-form__item-wrapper form-item form-item--checkbox" for="devil-bridge">
                 <input class="checkbox visually-hidden" type="checkbox" id="devil-bridge" name="Мост Дьявола" checked>
                 <span class="form-item__input form-item__input-checkbox"></span>
@@ -202,17 +202,17 @@
           <h3 class="modal-container__title title">Что-то пошло не так!</h3>
           <p class="modal-container__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
-        <button class="modal-container__button button" type="button">Ок</button>
+        <button class="modal-container__button button modal-error__button" type="button">Ок</button>
       </div>
     </div>
     <div class="modal-container success">
       <div class="modal-container__item modal-success">
-        <div class="modal-container__message">
+        <div class="modal-container__message modal-success__message">
           <h3 class="modal-container__title title">Ваш отзыв отправлен!</h3>
           <p class="modal-container__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal-container__inner-wrapper modal-container__inner-wrapper--grey">
-          <button class="modal-container__button button" type="button">Закрыть окно</button>
+          <button class="modal-container__button button modal-success__button" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>
