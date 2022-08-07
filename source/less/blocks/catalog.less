@@ -1,6 +1,11 @@
 .catalog__header {
   padding: 30px 20px 20px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 165px;
+    border-bottom: none;
+  }
 }
 
 .catalog__title {
@@ -11,9 +16,22 @@
   .list();
   padding-top: 20px;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    padding: 0 60px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
 
 .catalog__item {
   border-bottom: 1px solid #e5e5e5;
   align-self: stretch;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+  }
 }

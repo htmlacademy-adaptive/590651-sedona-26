@@ -1,5 +1,11 @@
 .advantages__header {
+  max-width: 520px;
+  margin: 0 auto;
   padding: 32px 24px 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 56px;
+  }
 }
 
 .advantages__header-title {
@@ -12,10 +18,17 @@
 
   &--illustrated {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 282px));
+    grid-template-columns: minmax(180px, 282px);
     row-gap: 16px;
     justify-content: center;
     padding: 25px 18px 50px;
+
+    @media (min-width: @tablet-width) {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      padding: 60px 30px;
+      gap: 50px;
+    }
   }
 
   &--background-blue {
@@ -32,16 +45,41 @@
   background-position: top;
   background-size: 768px 37px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    min-height: 256px;
+    grid-template-columns: 1fr 2fr;
+    background-image: none;
+  }
+}
+
+.advantages__list-bridge {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    min-height: 256px;
+    grid-template-columns: 2fr 1fr;
+    background-image: none;
+  }
+}
+
+.advantages__list-bridge .advantages__item-image {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
 }
 
 .advantages__item {
-  .flex();
   padding: 62px 18px 34px;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 32px 44px;
+  }
 }
 
 .advantages__number {
   .text();
-  margin: 10px 0 15px;
+  margin: auto;
 }
 
 .advantages__item-image {
@@ -53,18 +91,23 @@
   display: grid;
   justify-items: start;
   grid-template-rows: auto 1fr;
+
+  @media (min-width: @tablet-width) {
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .advantages__item-illustrated {
   .text(left);
   display: grid;
+  column-gap: 8px;
   grid-auto-flow: column;
 
   &::before {
     display: block;
     width: 40px;
     height: 40px;
-    margin-right: 8px;
     background-position: left;
     background-size: 40px 40px;
     background-repeat: no-repeat;
@@ -82,14 +125,34 @@
   &--souvenirs::before {
     background-image: url("../img/souvenirs.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    .flex();
+    align-items: center;
+
+    &::before {
+      margin: 0;
+      height: 75px;
+      width: 76px;
+      background-size: 76px 75px;
+    }
+  }
 }
 
 .advantages__item-illustrated__title {
   margin-top: 10px;
   margin-bottom: 16px;
-  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin: 18px auto;
+  }
 }
 
 .advantages__item-illustrated__text {
   .text(left);
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    max-width: 282px;
+  }
 }

@@ -19,19 +19,21 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="#">Фото и видео</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
-            </li>
+          <ul class="navigation__list navigation__list--left-column">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--current" href="#">Фото и видео</a>
+              </li>
+          </ul>
+          <ul class="navigation__list navigation__list--right-column">
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Форма Отзыва</a>
+              </li>
+              <li class="navigation__item navigation__item--last">
+                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -97,7 +99,7 @@
                 <div class="catalog-card__image-wrapper">
                   <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280">
                 </div>
-                <div class="catalog-card__content-wrapper">
+                <div class="catalog-card__content-wrapper catalog-card__content-wrapper--darkgrey">
                   <h3 class="catalog-card__title title">Дорога на север</h3>
                   <span class="catalog-card__author">Автор фото: Петр</span>
                   <button class="catalog-card__like-button like-button" type="button">

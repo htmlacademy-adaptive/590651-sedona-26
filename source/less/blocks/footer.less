@@ -1,11 +1,23 @@
 .footer__wrapper {
   padding: 40px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 45px;
+    padding-right: 43px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer__title {
   .text();
   font-size: 21px;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social {
@@ -16,6 +28,10 @@
   margin: 0 auto;
   margin-bottom: 40px;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__developer-link {
@@ -27,6 +43,10 @@
   color: #000000;
   font-weight: 400;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 
   &:hover {
     color: @main-color;
