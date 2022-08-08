@@ -793,6 +793,8 @@
     display: flex;
     flex-direction: row;
     width: 40%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     background-color: transparent;
   }
 }
@@ -809,6 +811,7 @@
 }
 @media (min-width: 768px) {
   .navigation__item {
+    width: 50%;
     padding: 0;
     border: none;
     box-shadow: none;
