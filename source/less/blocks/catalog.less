@@ -27,8 +27,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     padding: 0 60px;
+    margin-bottom: 60px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
