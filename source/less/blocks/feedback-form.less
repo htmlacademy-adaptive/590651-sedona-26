@@ -7,6 +7,10 @@
     column-gap: 88px;
     padding: 0 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .feedback-form__fieldset {
@@ -42,6 +46,7 @@
 .feedback-form__fieldset-reviewer {
   @media (min-width: @tablet-width) {
     padding-right: 44px;
+    padding-bottom: 20px;
     margin-right: -44px;
     border-right: 1px solid #d8d8d8;
   }
@@ -64,6 +69,11 @@
     column-gap: 50px;
     row-gap: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-auto-flow: column;
+    padding: 40px 0 60px;
+  }
 }
 
 .feedback-form__wrapper--places {
@@ -74,6 +84,11 @@
     margin: 0 auto;
     column-gap: 100px;
     row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-auto-flow: column;
+    padding: 40px 0 60px;
   }
 }
 
@@ -144,5 +159,17 @@
   @media (min-width: @tablet-width) {
     align-self: unset;
     justify-self: end;
+  }
+}
+
+.feedback-form__fieldset-freetext {
+  @media (min-width: @desktop-width) {
+    padding: 0 94px;
+  }
+}
+
+.feedback-form__button-wrapper {
+  @media (min-width: @desktop-width) {
+    padding: 0 94px;
   }
 }
