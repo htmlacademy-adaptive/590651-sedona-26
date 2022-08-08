@@ -338,7 +338,8 @@
 .feedback-form__fieldset {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 18px;
+  margin: 0;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border: none;
