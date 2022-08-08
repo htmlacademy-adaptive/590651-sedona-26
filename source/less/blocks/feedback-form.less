@@ -20,12 +20,13 @@
     border-bottom: 1px solid #e5e5e5;
 
     @media (min-width: @tablet-width) {
-      border: none;
+      border-bottom: none;
     }
   }
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    border: none;
   }
 }
 
@@ -38,16 +39,28 @@
   }
 }
 
+.feedback-form__fieldset-reviewer {
+  @media (min-width: @tablet-width) {
+    padding-right: 44px;
+    margin-right: -44px;
+    border-right: 1px solid #d8d8d8;
+  }
+}
+
 .feedback-form__fieldset-impression {
   grid-column: span 2;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #d8d8d8;
+  }
 }
 
 .feedback-form__wrapper--impression {
   @media (min-width: @tablet-width) {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    margin: 0 auto;
     column-gap: 50px;
     row-gap: 16px;
   }
@@ -59,23 +72,35 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     margin: 0 auto;
-    column-gap: 50px;
+    column-gap: 100px;
     row-gap: 16px;
   }
 }
 
 .feedback-form__fieldset-places {
   grid-column: span 2;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #d8d8d8;
+  }
 }
 
 .feedback-form__fieldset-freetext {
   grid-column: span 2;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #d8d8d8;
+  }
 }
 
 .feedback-form__fieldset-name {
   .text();
   font-weight: 700;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .feedback-form__item-wrapper {
