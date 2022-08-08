@@ -35,24 +35,15 @@
   }
 }
 .button {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   padding: 0 50px;
   border: none;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 58px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #81B3D2;
-}
-@media (min-width: 768px) {
-  .button {
-    font-size: 21px;
-  }
 }
 .button:hover {
   background-color: #669ec0;
@@ -1229,7 +1220,12 @@
   }
 }
 .modal-success__button {
-  padding: 0 140px;
+  padding: 0 60px;
+}
+@media (min-width: 768px) {
+  .modal-success__button {
+    padding: 0 140px;
+  }
 }
 .social-item {
   margin: 0;
