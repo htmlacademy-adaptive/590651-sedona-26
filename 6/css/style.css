@@ -595,10 +595,16 @@
 @media (min-width: 768px) {
   .footer__wrapper {
     display: flex;
-    padding-left: 45px;
-    padding-right: 43px;
+    padding-left: 60px;
+    padding-right: 60px;
     align-items: center;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }
 .footer__title {
