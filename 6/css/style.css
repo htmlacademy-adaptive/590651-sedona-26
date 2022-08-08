@@ -365,6 +365,11 @@
     border-right: 1px solid #d8d8d8;
   }
 }
+@media (min-width: 768px) {
+  .feedback-form__fieldset-contacts {
+    padding-bottom: 20px;
+  }
+}
 .feedback-form__fieldset-impression {
   grid-column: span 2;
 }
@@ -385,7 +390,7 @@
 }
 @media (min-width: 1200px) {
   .feedback-form__wrapper--impression {
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
     padding: 40px 0 60px;
   }
 }
@@ -401,7 +406,7 @@
 }
 @media (min-width: 1200px) {
   .feedback-form__wrapper--places {
-    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
     padding: 40px 0 60px;
   }
 }
