@@ -431,6 +431,11 @@
     border-top: 1px solid #d8d8d8;
   }
 }
+@media (min-width: 1200px) {
+  .feedback-form__fieldset-freetext {
+    padding: 0 94px;
+  }
+}
 .feedback-form__fieldset-name {
   margin: 0;
   padding: 0;
@@ -473,6 +478,11 @@
     align-items: center;
   }
 }
+@media (min-width: 1200px) {
+  .feedback-form__button-wrapper {
+    padding: 0 94px;
+  }
+}
 .feedback-form__submit {
   padding: 0 48px;
 }
@@ -487,16 +497,6 @@
   .feedback-form__explanation {
     align-self: unset;
     justify-self: end;
-  }
-}
-@media (min-width: 1200px) {
-  .feedback-form__fieldset-freetext {
-    padding: 0 94px;
-  }
-}
-@media (min-width: 1200px) {
-  .feedback-form__button-wrapper {
-    padding: 0 94px;
   }
 }
 .form-item {
@@ -677,7 +677,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form__header {
     padding: 60px 380px;
   }
