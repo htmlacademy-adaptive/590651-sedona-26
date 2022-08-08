@@ -3,6 +3,10 @@ const burgerToggle = document.querySelector('.navigation-toggle');
 const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
 const mobileNav = document.querySelectorAll('.navigation__list');
 
+mobileNav.forEach(element => {
+  element.classList.remove('navigation__list--nojs');
+});
+
 burgerToggle.addEventListener('click', () => {
   mobileNav.forEach(element => {
     element.classList.toggle('navigation__list--opened');

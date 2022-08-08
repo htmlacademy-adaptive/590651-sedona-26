@@ -30,11 +30,19 @@
   transition: 0.5s;
   z-index: 1;
 
+  &.navigation__list--nojs {
+    transform: translateY(0);
+  }
+
   &--opened {
     transform: translateY(0);
   }
 
   &--right-column.navigation__list--opened {
+    transform: translateY(100%);
+  }
+
+  &--right-column.navigation__list--nojs {
     transform: translateY(100%);
   }
 
