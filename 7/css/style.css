@@ -12,6 +12,19 @@
   font-display: swap;
   src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .description {
   margin: 0;
   padding: 0;
@@ -67,7 +80,7 @@
 .advantages-item__text br {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   .advantages-item__text br {
     display: block;
   }
@@ -136,6 +149,14 @@
   background-size: 768px 37px;
   background-repeat: no-repeat;
 }
+.advantages__list-city br {
+  display: none;
+}
+@media (min-width: 1140px) {
+  .advantages__list-city br {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   .advantages__list-city {
     display: grid;
@@ -143,6 +164,14 @@
     min-height: 256px;
     grid-template-columns: 1fr 2fr;
     background-image: none;
+  }
+}
+.advantages__list-bridge br {
+  display: none;
+}
+@media (min-width: 1140px) {
+  .advantages__list-bridge br {
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -267,6 +296,14 @@
   text-transform: uppercase;
   text-align: left;
 }
+.advantages__item-illustrated__text br {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .advantages__item-illustrated__text br {
+    display: block;
+  }
+}
 @media (min-width: 768px) {
   .advantages__item-illustrated__text {
     text-align: center;
@@ -288,19 +325,6 @@
   .advantages-places__title br {
     display: block;
   }
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .booking__wrapper {
   display: flex;
