@@ -58,6 +58,14 @@
   background-size: 768px 37px;
   background-repeat: no-repeat;
 
+  br {
+    display: none;
+
+    @media (min-width: 1140px) {
+      display: block;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     padding-top: 0;
@@ -68,6 +76,14 @@
 }
 
 .advantages__list-bridge {
+  br {
+    display: none;
+
+    @media (min-width: 1140px) {
+      display: block;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     min-height: 256px;
@@ -189,6 +205,14 @@
 
 .advantages__item-illustrated__text {
   .text(left);
+
+  br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     text-align: center;
