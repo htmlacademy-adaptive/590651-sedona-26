@@ -17,6 +17,16 @@
 .booking__description {
   .text();
   margin: 30px 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: block;
+    }
+  }
 }
 
 .booking__button {
