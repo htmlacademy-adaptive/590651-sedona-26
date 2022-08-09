@@ -1,0 +1,52 @@
+.presentation__wrapper {
+  padding: 20px;
+}
+
+.presentation__description {
+  padding: 0 20px;
+  margin: 40px 0;
+}
+
+.presentation__title {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.presentation__video {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.presentation__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 48px;
+  height: 54px;
+  border: none;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: transparent;
+  background-image: url("../img/play-button.svg");
+  background-size: 48px 54px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.presentation__text-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 120px;
+  }
+}

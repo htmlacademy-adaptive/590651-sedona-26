@@ -1,0 +1,34 @@
+.social-item {
+  .text();
+  .flex(row);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 6px;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.social-item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: @white;
+  background-color: @main-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

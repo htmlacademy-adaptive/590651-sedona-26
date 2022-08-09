@@ -1,0 +1,25 @@
+.button {
+  padding: 0 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 58px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @main-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: fade(@white, 30%);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: not-allowed;
+  }
+}

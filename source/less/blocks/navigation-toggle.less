@@ -1,0 +1,42 @@
+.navigation-toggle {
+  .flex();
+  height: 22px;
+  padding: 0;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.navigation-toggle__line {
+  display: block;
+  width: 23px;
+  height: 4px;
+  background-color: @main-color;
+  transition: 0.3s;
+}
+
+.navigation-toggle__line-first--open {
+  transform: rotate(45deg) translate3d(8px, 5px, 0);
+  background-color: @white;
+}
+
+.navigation-toggle__line-second--open {
+  transform: scale(0);
+}
+
+.navigation-toggle__line-third--open {
+  transform: rotate(-45deg) translate3d(8px, -5px, 0);
+  background-color: @white;
+}
