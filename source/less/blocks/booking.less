@@ -2,9 +2,25 @@
   .flex();
   align-items: center;
   padding: 40px 18px 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 160px;
+  }
+}
+
+.booking__title {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .booking__description {
   .text();
   margin: 30px 0;
+}
+
+.booking__button {
+  @media (min-width: @tablet-width) {
+    padding: 0 120px;
+  }
 }

@@ -1,8 +1,7 @@
 .navigation-toggle {
-  display: flex;
+  .flex();
   height: 22px;
   padding: 0;
-  flex-direction: column;
   justify-content: space-between;
   background-color: transparent;
   border: none;
@@ -13,6 +12,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -25,15 +28,15 @@
 }
 
 .navigation-toggle__line-first--open {
-  transform: translateX(100px);
-}
-
-.navigation-toggle__line-second--open {
-  transform: rotate(45deg) translateY(6px);
+  transform: rotate(45deg) translate3d(8px, 5px, 0);
   background-color: @white;
 }
 
+.navigation-toggle__line-second--open {
+  transform: scale(0);
+}
+
 .navigation-toggle__line-third--open {
-  transform: rotate(-45deg) translateY(-6px);
+  transform: rotate(-45deg) translate3d(8px, -5px, 0);
   background-color: @white;
 }

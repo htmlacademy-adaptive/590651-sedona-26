@@ -7,6 +7,12 @@
   margin: 40px 0;
 }
 
+.presentation__title {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
 .presentation__video {
   display: flex;
   position: relative;
@@ -36,5 +42,11 @@
 
   &:active {
     opacity: 0.4;
+  }
+}
+
+.presentation__text-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 120px;
   }
 }

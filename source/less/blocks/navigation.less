@@ -4,26 +4,48 @@
 
 .navigation__toggle {
   margin-left: auto;
-  margin-right: 17px;
+  margin-right: 20px;
   z-index: 10;
   cursor: pointer;
 }
 
-.navigation__list {
-  .list();
+.navigation__wrapper {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(-100%);
+  transition: 0.5s;
+
+  &--opened {
+    transform: translateY(0);
+  }
+
+  &.navigation__wrapper--nojs {
+    transform: translateY(0);
+  }
+
+  @media (min-width: @tablet-width) {
+    .flex(row);
+    position: static;
+    transform: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.navigation__list {
+  .list();
   justify-content: center;
   align-items: center;
   width: 100vw;
   background-color: @main-color;
-  transition: 0.5s;
-  z-index: 1;
 
-  &--opened {
-    transform: translateY(0);
+  @media (min-width: @tablet-width) {
+    .flex(row);
+    width: 40%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: transparent;
   }
 }
 
@@ -31,23 +53,57 @@
   width: 100%;
   padding: 17px 0 12px;
   text-align: center;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%);
 
-  &:first-child {
-    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
-  }
-
-  &:last-child {
+  &--last {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+
+    &--first {
+      box-shadow: none;
+    }
+
+    &--last {
+      background: none;
+      box-shadow: none;
+    }
+  }
 }
 
+
 .navigation__link {
+  display: block;
   color: @white;
   font-family: @main-font;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    & {
+      color: #000000;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: @main-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--current {
+      color: #766357;
+    }
+  }
 }
