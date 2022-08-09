@@ -64,6 +64,14 @@
 .advantages-item__text--white {
   color: #ffffff;
 }
+.advantages-item__text br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .advantages-item__text br {
+    display: block;
+  }
+}
 .advantages {
   display: flex;
   flex-direction: column;
