@@ -13,25 +13,27 @@
       </a>
       <nav class="page-header__navigation navigation">
         <button class="navigation__toggle navigation-toggle" type="button">
-          <span class="navigation-toggle__line"></span>
-          <span class="navigation-toggle__line"></span>
-          <span class="navigation-toggle__line"></span>
+          <span class="navigation-toggle__line navigation-toggle__line-first navigation-toggle__line-first--open"></span>
+          <span class="navigation-toggle__line navigation-toggle__line-second navigation-toggle__line-second--open"></span>
+          <span class="navigation-toggle__line navigation-toggle__line-third navigation-toggle__line-third--open"></span>
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item navigation__item--current">
-              <a class="navigation__link" href="#">Фото и видео</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
-            </li>
+        <div class="navigation__wrapper navigation__wrapper--nojs">
+          <ul class="navigation__list navigation__list--left-column">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--current" href="#">Фото и видео</a>
+              </li>
+          </ul>
+          <ul class="navigation__list navigation__list--right-column">
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Форма Отзыва</a>
+              </li>
+              <li class="navigation__item navigation__item--last">
+                <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -53,7 +55,9 @@
             <li class="catalog__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
-                  <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280">
+                  <a href="#" class="catalog-card__link">
+                    <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280">
+                  </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Неродные просторы</h3>
@@ -64,7 +68,7 @@
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
-                      1350
+                      <span class="catalog-card__likes">1350</span>
                       <span class="visually-hidden">пользователям понравилось.</span>
                     </b>
                   </button>
@@ -74,7 +78,9 @@
             <li class="catalog__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
-                  <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280">
+                  <a href="#" class="catalog-card__link">
+                    <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280">
+                  </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Местная растительность</h3>
@@ -85,7 +91,7 @@
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
-                      143
+                      <span class="catalog-card__likes">143</span>
                       <span class="visually-hidden">пользователям понравилось.</span>
                     </b>
                   </button>
@@ -95,9 +101,11 @@
             <li class="catalog__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
-                  <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280">
+                  <a href="#" class="catalog-card__link">
+                    <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280">
+                  </a>
                 </div>
-                <div class="catalog-card__content-wrapper">
+                <div class="catalog-card__content-wrapper catalog-card__content-wrapper--darkgrey">
                   <h3 class="catalog-card__title title">Дорога на север</h3>
                   <span class="catalog-card__author">Автор фото: Петр</span>
                   <button class="catalog-card__like-button like-button" type="button">
@@ -106,7 +114,7 @@
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
-                      96
+                      <span class="catalog-card__likes">96</span>
                       <span class="visually-hidden">пользователям понравилось.</span>
                     </b>
                   </button>
@@ -116,7 +124,9 @@
             <li class="catalog__item catalog-card">
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
-                  <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280">
+                  <a href="#" class="catalog-card__link">
+                    <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280">
+                  </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Мост дьявола</h3>
@@ -127,7 +137,7 @@
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
-                      254
+                      <span class="catalog-card__likes">254</span>
                       <span class="visually-hidden">пользователям понравилось.</span>
                     </b>
                   </button>
@@ -139,8 +149,10 @@
       </section>
       <section class="presentation">
         <div class="presentation__wrapper">
-          <h2 class="presentation__title title">Все еще сомневаетесь?</h2>
-          <p class="presentation__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="presentation__text-wrapper">
+            <h2 class="presentation__title title">Все еще сомневаетесь?</h2>
+            <p class="presentation__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
           <div class="presentation__video">
             <video src="#" poster="img/catalog-video-mobile.jpg" width="280" height="177">
             </video>
@@ -190,23 +202,12 @@
         <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           Разработано
           <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
           </svg>
           <span class="visually-hidden">Html Academy.</span>
         </a>
       </div>
     </footer>
-    <script>
-      const burgerToggle = document.querySelector('.navigation-toggle');
-      const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
-      const mobileNav = document.querySelector('.navigation__list');
-
-      burgerToggle.addEventListener('click', () => {
-        mobileNav.classList.toggle('navigation__list--opened');
-        burgerToggleLines[0].classList.toggle('navigation-toggle__line-first--open');
-        burgerToggleLines[1].classList.toggle('navigation-toggle__line-second--open');
-        burgerToggleLines[2].classList.toggle('navigation-toggle__line-third--open');
-      });
-    </script>
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>
