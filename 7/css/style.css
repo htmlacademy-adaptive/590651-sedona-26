@@ -703,8 +703,8 @@
   padding: 0;
   text-transform: uppercase;
   text-align: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -897,7 +897,7 @@
 .navigation__link {
   display: block;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
@@ -963,7 +963,7 @@
   grid-template-rows: min-content 1fr min-content;
   padding: 0;
   overflow-x: hidden;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 .page-header {
   display: flex;
