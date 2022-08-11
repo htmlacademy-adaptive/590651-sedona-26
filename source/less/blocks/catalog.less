@@ -3,7 +3,7 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 165px;
+    padding: 60px 0;
     border-bottom: none;
   }
 }
@@ -17,8 +17,14 @@
 }
 
 .catalog__description {
-  @media (min-width: @desktop-width) {
-    padding: 20px 220px;
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: block;
+    }
   }
 }
 
