@@ -1260,6 +1260,9 @@
   display: none;
 }
 @media (min-width: 540px) {
+  .presentation__description {
+    padding: 0;
+  }
   .presentation__description br {
     display: block;
   }
