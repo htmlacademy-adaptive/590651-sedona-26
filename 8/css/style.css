@@ -77,14 +77,6 @@
 .advantages-item__text--white {
   color: #ffffff;
 }
-.advantages-item__text br {
-  display: none;
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .advantages-item__text br {
-    display: block;
-  }
-}
 .advantages {
   display: flex;
   flex-direction: column;
@@ -166,14 +158,6 @@
     background-image: none;
   }
 }
-.advantages__list-bridge br {
-  display: none;
-}
-@media (min-width: 1140px) {
-  .advantages__list-bridge br {
-    display: block;
-  }
-}
 @media (min-width: 768px) {
   .advantages__list-bridge {
     display: grid;
@@ -181,6 +165,11 @@
     grid-template-columns: 2fr 1fr;
     background-image: none;
   }
+}
+.advantages__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .advantages__list-bridge .advantages__item-image {
@@ -213,6 +202,14 @@
     justify-content: flex-start;
   }
 }
+.advantages__title br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .advantages__title br {
+    display: block;
+  }
+}
 .advantages__number {
   margin: 0;
   padding: 0;
@@ -222,7 +219,6 @@
 }
 .advantages__item-image {
   padding: 0;
-  align-items: center;
 }
 .advantages__item-illustrated__wrapper {
   display: grid;
@@ -285,9 +281,15 @@
   margin-top: 10px;
   margin-bottom: 16px;
 }
+.advantages__item-illustrated__title br {
+  display: none;
+}
 @media (min-width: 768px) {
   .advantages__item-illustrated__title {
     margin: 18px auto;
+  }
+  .advantages__item-illustrated__title br {
+    display: block;
   }
 }
 .advantages__item-illustrated__text {
@@ -308,6 +310,14 @@
   .advantages__item-illustrated__text {
     text-align: center;
     max-width: 282px;
+  }
+}
+.advantages__description br {
+  display: none;
+}
+@media (min-width: 820px) {
+  .advantages__description br {
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -776,6 +786,8 @@
 @media (min-width: 768px) {
   .intro__image {
     padding: 78px 0 90px;
+    width: 461px;
+    height: auto;
   }
 }
 .navigation-toggle {
@@ -1176,7 +1188,7 @@
 }
 @media (min-width: 768px) {
   .catalog__header {
-    padding: 60px 165px;
+    padding: 60px 0;
     border-bottom: none;
   }
 }
@@ -1188,9 +1200,12 @@
     font-size: 30px;
   }
 }
-@media (min-width: 1200px) {
-  .catalog__description {
-    padding: 20px 220px;
+.catalog__description br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .catalog__description br {
+    display: block;
   }
 }
 .catalog__list {
