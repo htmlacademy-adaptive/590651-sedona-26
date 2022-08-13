@@ -2,9 +2,10 @@
   .flex();
   height: 22px;
   padding: 0;
-  justify-content: space-between;
   background-color: transparent;
   border: none;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     opacity: 0.6;
@@ -27,8 +28,13 @@
   display: block;
   width: 23px;
   height: 4px;
+  margin-bottom: 5px;
   background-color: @main-color;
   transition: 0.3s;
+}
+
+.navigation-toggle__line-third {
+  margin-bottom: 0;
 }
 
 .navigation-toggle__line-first--open {
