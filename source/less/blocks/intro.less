@@ -1,9 +1,29 @@
 .intro {
   background-color: #adcbe9;
-  background-image: url("../img/intro-triangle.svg"), url("../img/sedona-background.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-mobile.jpg");
   background-size: auto, cover;
   background-position: bottom center, center;
   background-repeat: no-repeat;
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-tablet.jpg");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-tablet@2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-desktop.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/sedona-bg-desktop@2x.jpg");
+  }
 }
 
 .intro__image {
