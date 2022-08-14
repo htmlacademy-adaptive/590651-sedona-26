@@ -80,27 +80,26 @@
   }
 }
 
-.catalog-card__like-button {
+.catalog-card__like-button__wrapper {
   display: flex;
   padding: 0;
-  border: none;
   align-items: center;
-  background-color: transparent;
-  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     grid-row: span 3;
     align-self: center;
     justify-self: end;
   }
+}
 
+.catalog-card__like-button {
   @media (min-width: @desktop-width) {
     color: @white;
   }
 }
 
 .catalog-card__like-button__icon {
-  margin-right: 14px;
+  margin-right: 5px;
   opacity: 0.3;
 
   &:hover {
@@ -127,4 +126,5 @@
 .catalog-card__likes-amount {
   font-size: 14px;
   line-height: 21px;
+  pointer-events: none;
 }
