@@ -1219,16 +1219,13 @@
     color: #ffffff;
   }
 }
-.catalog-card__like-button {
+.catalog-card__like-button__wrapper {
   display: flex;
   padding: 0;
-  border: none;
   align-items: center;
-  background-color: transparent;
-  cursor: pointer;
 }
 @media (min-width: 768px) {
-  .catalog-card__like-button {
+  .catalog-card__like-button__wrapper {
     grid-row: span 3;
     align-self: center;
     justify-self: end;
@@ -1240,7 +1237,7 @@
   }
 }
 .catalog-card__like-button__icon {
-  margin-right: 14px;
+  margin-right: 5px;
   opacity: 0.3;
 }
 .catalog-card__like-button__icon:hover {
@@ -1263,6 +1260,13 @@
 .catalog-card__likes-amount {
   font-size: 14px;
   line-height: 21px;
+  pointer-events: none;
+}
+.like-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 .catalog__header {
   padding: 30px 20px 20px;
