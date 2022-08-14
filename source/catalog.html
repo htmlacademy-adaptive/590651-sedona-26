@@ -4,15 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180x180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body page-body">
+    <svg style="display: none;">
+      <symbol id="vk-icon">
+        <g clip-path="url(#clip0_29549_1753)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_29549_1753">
+          <rect width="24" height="24"/>
+          </clipPath>
+          </defs>
+      </symbol>
+      <symbol id="telegram-icon">
+        <path d="M22.4392 4.62225L19.2705 19.566C19.0312 20.6205 18.408 20.883 17.5222 20.3865L12.6937 16.8285L10.3642 19.0695C10.1062 19.3275 9.89099 19.5428 9.39374 19.5428L9.74099 14.6258L18.6892 6.54C19.0785 6.1935 18.6045 6.00075 18.0847 6.348L7.02224 13.314L2.25974 11.823C1.22399 11.4998 1.20524 10.7873 2.47574 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4392 4.623V4.62225Z"/>
+      </symbol>
+      <symbol id="youtube-icon">
+        <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+      </symbol>
+      <symbol id="htmlacademy-logo">
+        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+      </symbol>
+      <symbol id="like-icon">
+        <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+      </symbol>
+    </svg>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle navigation-toggle" type="button">
+        <button class="navigation__toggle navigation-toggle navigation-toggle--nojs" type="button">
           <span class="navigation-toggle__line navigation-toggle__line-first navigation-toggle__line-first--open"></span>
           <span class="navigation-toggle__line navigation-toggle__line-second navigation-toggle__line-second--open"></span>
           <span class="navigation-toggle__line navigation-toggle__line-third navigation-toggle__line-third--open"></span>
@@ -48,7 +76,7 @@
       <section class="catalog">
         <header class="catalog__header">
           <h2 class="catalog__title title">Фото и видео</h2>
-          <p class="catalog__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="catalog__description description">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <div class="catalog__wrapper">
           <ul class="catalog__list">
@@ -56,15 +84,19 @@
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
                   <a href="#" class="catalog-card__link">
-                    <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-1-desktop.jpg 1x, img/catalog-photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog-photo-1-tablet.jpg 1x, img/catalog-photo-1-tablet@2x.jpg 2x">
+                      <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280" srcset="img/catalog-photo-1-mobile@2x.jpg 2x">
+                    </picture>
                   </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Неродные просторы</h3>
                   <span class="catalog-card__author">Автор фото: Борис</span>
                   <button class="catalog-card__like-button like-button" type="button">
-                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                      <use href="#like-icon"></use>
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
@@ -79,15 +111,19 @@
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
                   <a href="#" class="catalog-card__link">
-                    <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-2-desktop.jpg 1x, img/catalog-photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog-photo-2-tablet.jpg 1x, img/catalog-photo-2-tablet@2x.jpg 2x">
+                      <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280" srcset="img/catalog-photo-2-mobile@2x.jpg 2x">
+                    </picture>
                   </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Местная растительность</h3>
                   <span class="catalog-card__author">Автор фото: Сергей</span>
                   <button class="catalog-card__like-button like-button" type="button">
-                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                      <use href="#like-icon"></use>
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
@@ -102,15 +138,19 @@
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
                   <a href="#" class="catalog-card__link">
-                    <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-3-desktop.jpg 1x, img/catalog-photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog-photo-3-tablet.jpg 1x, img/catalog-photo-3-tablet@2x.jpg 2x">
+                      <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280" srcset="img/catalog-photo-3-mobile@2x.jpg 2x">
+                    </picture>
                   </a>
                 </div>
                 <div class="catalog-card__content-wrapper catalog-card__content-wrapper--darkgrey">
                   <h3 class="catalog-card__title title">Дорога на север</h3>
                   <span class="catalog-card__author">Автор фото: Петр</span>
                   <button class="catalog-card__like-button like-button" type="button">
-                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                      <use href="#like-icon"></use>
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
@@ -125,15 +165,19 @@
               <div class="catalog-card__wrapper">
                 <div class="catalog-card__image-wrapper">
                   <a href="#" class="catalog-card__link">
-                    <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-4-desktop.jpg 1x, img/catalog-photo-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog-photo-4-tablet.jpg 1x, img/catalog-photo-4-tablet@2x.jpg 2x">
+                      <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280" srcset="img/catalog-photo-4-mobile@2x.jpg 2x">
+                    </picture>
                   </a>
                 </div>
                 <div class="catalog-card__content-wrapper">
                   <h3 class="catalog-card__title title">Мост дьявола</h3>
                   <span class="catalog-card__author">Автор фото: Антон</span>
                   <button class="catalog-card__like-button like-button" type="button">
-                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.4 9.6L16.8 12.5L16.2 15H18.7H24.9V17C24.9 17 24.9 17 24.9 17.1L22 24H13V14L17.4 9.6ZM7 16V24V16ZM18.2 6L11.6 12.6C11.2 12.9 11 13.4 11 14V24C11 25.1 11.9 26 13 26H22C22.8 26 23.5 25.5 23.8 24.8L26.8 17.7C26.9 17.5 26.9 17.2 26.9 17V15H27C27 13.9 26.1 13 25 13H18.7L19.7 8.4V8.1C19.7 7.7 19.5 7.3 19.3 7L18.2 6ZM9 14H5V26H9V14Z"/>
+                    <svg class="catalog-card__like-button__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                      <use href="#like-icon"></use>
                     </svg>
                     <span class="visually-hidden">Мне нравится!</span>
                     <b class="catalog-card__likes-amount likes-amount">
@@ -165,35 +209,28 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <h2 class="footer__title title">#visitsedona</h2>
+        <h2 class="footer__title">#visitsedona</h2>
         <ul class="footer__social social">
           <li class="social-item">
             <a class="social-item__link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow">
-              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_29549_1753)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_29549_1753">
-                <rect width="24" height="24"/>
-                </clipPath>
-                </defs>
+              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <use href="#vk-icon"></use>
               </svg>
               <span class="visually-hidden">Наш vk.</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-item__link" href="https://t.me/htmlacademy" target="_blank" rel="noopener nofollow">
-              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.4392 4.62225L19.2705 19.566C19.0312 20.6205 18.408 20.883 17.5222 20.3865L12.6937 16.8285L10.3642 19.0695C10.1062 19.3275 9.89099 19.5428 9.39374 19.5428L9.74099 14.6258L18.6892 6.54C19.0785 6.1935 18.6045 6.00075 18.0847 6.348L7.02224 13.314L2.25974 11.823C1.22399 11.4998 1.20524 10.7873 2.47574 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4392 4.623V4.62225Z"/>
+              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <use href="#telegram-icon"></use>
               </svg>
               <span class="visually-hidden">Наш telegram.</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-item__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener nofollow">
-              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+              <svg class="social-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <use href="#youtube-icon"></use>
               </svg>
               <span class="visually-hidden">Наш youtube.</span>
             </a>
@@ -201,8 +238,8 @@
         </ul>
         <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           Разработано
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor">
+            <use href="#htmlacademy-logo"></use>
           </svg>
           <span class="visually-hidden">Html Academy.</span>
         </a>
