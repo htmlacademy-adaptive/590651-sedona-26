@@ -69,6 +69,9 @@
   background-color: #e5e5e5;
   cursor: not-allowed;
 }
+.button:focus-visible {
+  outline: 2px solid #5496bd;
+}
 .advantages-item {
   display: flex;
   flex-direction: column;
@@ -526,6 +529,9 @@
     margin-bottom: 0;
   }
 }
+.feedback-form__item-wrapper:focus-within .form-item__input {
+  outline: 2px solid #81b3d2;
+}
 .feedback-form__button-wrapper {
   display: flex;
   flex-direction: column;
@@ -661,11 +667,15 @@
   resize: vertical;
 }
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 40px 20px 20px;
 }
 @media (min-width: 768px) {
   .footer__wrapper {
     display: flex;
+    flex-direction: row;
     padding-left: 60px;
     padding-right: 60px;
     align-items: center;
@@ -694,10 +704,9 @@
 .footer__social {
   display: flex;
   flex-direction: column;
-  padding: 0;
   margin: 0;
   list-style-type: none;
-  padding: 0 40px;
+  padding: 0;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -733,6 +742,9 @@
 }
 .footer__developer-link:active {
   color: #b3b3b3;
+}
+.footer__developer-link:focus-visible {
+  outline: 2px solid #81b3d2;
 }
 .form__header {
   border-bottom: 1px solid #e5e5e5;
@@ -871,6 +883,9 @@
   z-index: 10;
   cursor: pointer;
 }
+.navigation__toggle:focus-visible {
+  outline: 2px solid #5496bd;
+}
 .navigation__wrapper {
   position: absolute;
   top: 0;
@@ -928,6 +943,10 @@
   .navigation__item:hover {
     background-color: #669ec0;
   }
+  .navigation__item:focus-within {
+    background-color: #669ec0;
+    outline: none;
+  }
   .navigation__item:active {
     background-color: #5496bd;
   }
@@ -961,6 +980,9 @@
 .navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
+.navigation__link:focus-visible {
+  outline: none;
+}
 @media (min-width: 768px) {
   .navigation__link {
     padding: 0;
@@ -972,6 +994,9 @@
   }
   .navigation__link:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+  .navigation__link:focus-visible {
+    outline: 2px solid #81b3d2;
   }
   .navigation__link--current {
     color: #766357;
@@ -1070,6 +1095,7 @@
   position: absolute;
   left: 50%;
   top: 0;
+  max-height: 96px;
   transform: translateX(-50%);
   margin-left: auto;
 }
@@ -1452,5 +1478,9 @@
 .social-item__link:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+.social-item__link:focus-visible {
+  border: 2px solid #5496bd;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
