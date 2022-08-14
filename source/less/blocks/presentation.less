@@ -25,10 +25,43 @@
   }
 }
 
-.presentation__video {
+.presentation__video-wrapper {
   display: flex;
   position: relative;
   justify-content: center;
+}
+
+.presentation__video[poster] {
+  width: 280px;
+  height: 177px;
+  background-image: url("../img/catalog-video-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-video-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/catalog-video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-video-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/catalog-video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-video-desktop@2x.jpg");
+    }
+  }
 }
 
 .presentation__video-button {
@@ -41,7 +74,7 @@
   border: none;
   transform: translate3d(-50%, -50%, 0);
   background-color: transparent;
-  background-image: url("../img/icons/play-button.svg");
+  background-image: url("../../img/icons/play-button.svg");
   background-size: 48px 54px;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,6 +87,10 @@
 
   &:active {
     opacity: 0.4;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @button-active;
   }
 }
 
