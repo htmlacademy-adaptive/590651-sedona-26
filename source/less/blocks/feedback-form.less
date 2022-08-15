@@ -127,7 +127,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    padding: 0 50px;
+
+    &--bordered {
+      padding: 0 50px;
+    }
   }
 }
 
@@ -146,6 +149,7 @@
 
 .feedback-form__item-wrapper:focus-within .form-item__input {
   outline: 2px solid @main-color;
+  -webkit-outline: 2px solid @main-color;
 }
 
 .feedback-form__button-wrapper {
