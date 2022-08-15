@@ -513,6 +513,8 @@
 @media (min-width: 768px) {
   .feedback-form__fieldset-name {
     font-size: 21px;
+  }
+  .feedback-form__fieldset-name--bordered {
     padding: 0 50px;
   }
 }
@@ -531,6 +533,7 @@
 }
 .feedback-form__item-wrapper:focus-within .form-item__input {
   outline: 2px solid #81b3d2;
+  -webkit-outline: 2px solid #81b3d2;
 }
 .feedback-form__button-wrapper {
   display: flex;
