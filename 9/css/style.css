@@ -981,6 +981,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link--current {
+  pointer-events: none;
+}
 .navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1004,7 +1007,6 @@
   }
   .navigation__link--current {
     color: #766357;
-    pointer-events: none;
   }
 }
 *,
