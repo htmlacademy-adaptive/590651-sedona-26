@@ -109,6 +109,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &--current {
+    pointer-events: none;
+  }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -140,7 +144,6 @@
 
     &--current {
       color: #766357;
-      pointer-events: none;
     }
   }
 }
