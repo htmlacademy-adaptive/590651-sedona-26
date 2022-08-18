@@ -46,12 +46,11 @@
   background-color: @main-color;
 
   @media (min-width: @tablet-width) {
-    .flex(row);
-    width: 40%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     background-color: transparent;
-    align-items: flex-start;
+    align-items: center;
+    justify-items: center;
   }
 }
 
@@ -81,7 +80,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 50%;
     padding: 15px 0;
     border: none;
     box-shadow: none;
@@ -97,6 +95,9 @@
   }
 }
 
+.navigation__item:nth-child(4n-1) {
+  grid-column: 4 / 5;
+}
 
 .navigation__link {
   display: block;
