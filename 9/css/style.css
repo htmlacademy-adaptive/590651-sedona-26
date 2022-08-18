@@ -924,7 +924,6 @@
 @media (min-width: 768px) {
   .navigation__item {
     width: 100%;
-    padding: 15px 0;
     border: none;
     box-shadow: none;
   }
@@ -961,7 +960,7 @@
 }
 @media (min-width: 768px) {
   .navigation__link {
-    padding: 0;
+    padding: 15px 0;
     color: #000000;
     font-size: 14px;
   }
