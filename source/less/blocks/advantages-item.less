@@ -16,3 +16,23 @@
     color: @white;
   }
 }
+
+.advantages-item__text--tablet-break {
+  br {
+    display: none;
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: block;
+    }
+  }
+}
+
+.advantages-item__text--desktop-break {
+  br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
