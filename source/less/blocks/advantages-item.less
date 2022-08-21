@@ -15,4 +15,24 @@
   &--white {
     color: @white;
   }
+
+  &--tablet-break {
+    br {
+      display: none;
+
+      @media (min-width: @tablet-width) and (max-width: 1199px) {
+        display: block;
+      }
+    }
+  }
+
+  &--desktop-break {
+    br {
+      display: none;
+
+      @media (min-width: @desktop-width) {
+        display: block;
+      }
+    }
+  }
 }
