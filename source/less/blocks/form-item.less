@@ -4,11 +4,13 @@
   &--radio {
     .flex(row);
     align-items: center;
+    cursor: pointer;
   }
 
   &--checkbox {
     .flex(row);
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -79,7 +81,7 @@
   bottom: 0;
   right: 0;
   background-color: #e6e6e6;
-  padding: 17.7px 20px;
+  padding: 17px 20px;
 }
 
 .form-item__input-checkbox {
@@ -87,10 +89,10 @@
 }
 
 .checkbox:checked + .form-item__input {
-  background-image: url("../img/icons/checkbox-tick.svg");
   background-position: center;
   background-size: 22px 16px;
   background-repeat: no-repeat;
+  background-image: url("../../img/checkbox-tick.svg");
 }
 
 .form-item:active .form-item__input-checkbox {
@@ -99,7 +101,7 @@
 }
 
 .form-item--checkbox:active .checkbox:checked + .form-item__input {
-  background-image: url("../img/icons/checkbox-tick-active.svg");
+  background-image: url("../../img/checkbox-tick-active.svg");
 }
 
 .form-item__input-textarea {
