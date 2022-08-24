@@ -20,6 +20,16 @@
     color: @white;
   }
 
+  &--no-tablet-break {
+    br {
+      display: block;
+
+      @media (min-width: @tablet-width) and (max-width: 1199px) {
+        display: none;
+      }
+    }
+  }
+
   &--tablet-break {
     br {
       @media (min-width: @tablet-width) and (max-width: 1199px) {
