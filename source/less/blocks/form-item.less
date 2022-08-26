@@ -19,21 +19,25 @@
   color: #333333;
   margin-left: 16px;
   font-size: 14px;
+  line-height: 21px;
 
   &--bold {
+    text-transform: inherit;
     font-weight: 700;
+    font-size: 18px;
   }
 }
 
 .form-item__input {
   .text(left);
-  padding: 18.5px;
+  padding: 0 20px;
   border: none;
   border-radius: 0;
   align-self: stretch;
   text-transform: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 58px;
   background-color: #f2f2f2;
   outline: none;
 
@@ -44,7 +48,6 @@
   &::placeholder {
     text-transform: none;
     line-height: 26px;
-    padding: 0;
     margin: 0;
     color: fade(#000000, 30%);
   }
@@ -81,10 +84,12 @@
   bottom: 0;
   right: 0;
   background-color: #e6e6e6;
-  padding: 17px 20px;
+  padding: 17.5px 20px;
 }
 
 .form-item__input-checkbox {
+  padding: 23px;
+  border-radius: 4px;
   width: auto;
 }
 
@@ -106,5 +111,7 @@
 
 .form-item__input-textarea {
   font-family: "PT Sans", sans-serif;
+  padding: 20px;
+  line-height: 26px;
   resize: vertical;
 }
