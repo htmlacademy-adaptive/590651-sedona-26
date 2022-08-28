@@ -1,5 +1,5 @@
 .feedback-form {
-  padding-bottom: 34px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -15,7 +15,7 @@
 
 .feedback-form__fieldset {
   .flex();
-  padding: 0 20px 15px;
+  padding: 0 20px 40px;
   margin: 0;
   margin-bottom: 40px;
   border: none;
@@ -44,6 +44,10 @@
 }
 
 .feedback-form__fieldset-reviewer {
+  @media (max-width: @mobile-width) {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: @tablet-width) {
     padding-right: 44px;
     padding-bottom: 20px;
@@ -53,6 +57,10 @@
 }
 
 .feedback-form__fieldset-contacts {
+  @media (max-width: @mobile-width) {
+    margin-bottom: 22px;
+  }
+
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
   }
@@ -60,6 +68,11 @@
 
 .feedback-form__fieldset-impression {
   grid-column: span 2;
+
+  @media (max-width: @mobile-width) {
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
 
   @media (min-width: @tablet-width) {
     border-top: 1px solid #d8d8d8;
@@ -82,6 +95,19 @@
   }
 }
 
+.feedback-form__fieldset-places {
+  grid-column: span 2;
+
+  @media (max-width: @mobile-width) {
+    padding-bottom: 25px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid #d8d8d8;
+  }
+}
+
 .feedback-form__wrapper--places {
   @media (min-width: @tablet-width) {
     display: grid;
@@ -98,16 +124,9 @@
   }
 }
 
-.feedback-form__fieldset-places {
-  grid-column: span 2;
-
-  @media (min-width: @tablet-width) {
-    border-top: 1px solid #d8d8d8;
-  }
-}
-
 .feedback-form__fieldset-freetext {
   grid-column: span 2;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     border-top: 1px solid #d8d8d8;
@@ -156,6 +175,7 @@
   .flex();
   padding: 0 20px;
   align-items: center;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     display: grid;
