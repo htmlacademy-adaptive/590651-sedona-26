@@ -29,6 +29,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     padding: 20px;
+    padding-bottom: 15px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, min-content);
     background-color: #f2f2f2;
@@ -107,6 +108,10 @@
 .catalog-card__like-button__icon {
   margin-right: 20px;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
 
   &:hover {
     opacity: 1;
