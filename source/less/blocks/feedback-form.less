@@ -17,7 +17,7 @@
   .flex();
   padding: 0 20px 40px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   border: none;
 
   &:not(:last-of-type) {
@@ -76,17 +76,17 @@
 
   @media (min-width: @tablet-width) {
     border-top: 1px solid #d8d8d8;
-    margin-bottom: 42px;
+    margin-bottom: 46px;
   }
 }
 
 .feedback-form__wrapper--impression {
   @media (min-width: @tablet-width) {
     display: grid;
-    margin: 0 auto;
+    margin: 0 36px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    column-gap: 50px;
+    column-gap: 16px;
     row-gap: 16px;
   }
 
@@ -106,17 +106,16 @@
 
   @media (min-width: @tablet-width) {
     border-top: 1px solid #d8d8d8;
+    margin-bottom: 40px;
   }
 }
 
 .feedback-form__wrapper--places {
   @media (min-width: @tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    margin: 0 auto;
-    column-gap: 100px;
-    row-gap: 16px;
+    margin: 0 84px;
+    column-gap: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -150,8 +149,35 @@
     margin-bottom: 26px;
 
     &--bordered {
-      padding: 0 50px;
       margin-bottom: 32px;
+    }
+  }
+
+  &--reviewer {
+    margin-left: 81px;
+  }
+
+  &--contacts {
+    margin-left: -18px;
+  }
+
+  &--impression {
+    @media (min-width: @tablet-width) {
+      padding: 0 65px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &--places {
+    @media (min-width: @tablet-width) {
+      padding: 0 61px;
+      margin-bottom: 27px;
+    }
+  }
+
+  &--freetext {
+    @media (min-width: @tablet-width) {
+      padding: 0 76px;
     }
   }
 }
@@ -183,6 +209,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     padding: 0;
+    margin-bottom: 24px;
     grid-template-columns: repeat(2, 1fr);
     grid-column: span 2;
     align-items: center;
@@ -196,6 +223,7 @@
 .feedback-form__submit {
   padding: 0 48px;
   align-self: stretch;
+  cursor: pointer;
 }
 
 .feedback-form__explanation {
@@ -208,5 +236,6 @@
   @media (min-width: @tablet-width) {
     align-self: unset;
     justify-self: end;
+    font-size: 14px;
   }
 }
