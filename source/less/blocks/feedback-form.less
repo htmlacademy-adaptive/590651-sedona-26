@@ -1,6 +1,4 @@
 .feedback-form {
-  margin-bottom: 14px;
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,6 +8,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 120px;
+    column-gap: 152px;
   }
 }
 
@@ -54,6 +53,12 @@
     margin-right: -44px;
     border-right: 1px solid #d8d8d8;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
+    margin-right: -90px;
+    margin-bottom: 51px;
+  }
 }
 
 .feedback-form__fieldset-contacts {
@@ -78,6 +83,10 @@
     border-top: 1px solid #d8d8d8;
     margin-bottom: 46px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .feedback-form__wrapper--impression {
@@ -92,7 +101,10 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 40px 0 60px;
+    padding: 16px 0 60px;
+    margin: 0 52px;
+    width: 100%;
+    max-width: 910px;
   }
 }
 
@@ -108,19 +120,26 @@
     border-top: 1px solid #d8d8d8;
     margin-bottom: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .feedback-form__wrapper--places {
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    margin: 0 84px;
-    column-gap: 32px;
+    margin: 0 86px;
+    column-gap: 28px;
   }
 
   @media (min-width: @desktop-width) {
+    justify-items: center;
     grid-template-columns: repeat(4, 1fr);
-    padding: 40px 0 60px;
+    padding: 32px 0 60px;
+    column-gap: 20px;
+    margin: 0 26px;
   }
 }
 
@@ -157,11 +176,19 @@
     @media (min-width: @tablet-width) {
       margin-left: 81px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 167px;
+    }
   }
 
   &--contacts {
     @media (min-width: @tablet-width) {
       margin-left: -18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 32px;
     }
   }
 
@@ -182,6 +209,10 @@
   &--freetext {
     @media (min-width: @tablet-width) {
       padding: 0 76px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 27px;
     }
   }
 }
