@@ -18,3 +18,33 @@
   transform: translateX(-50%);
   margin-left: auto;
 }
+
+
+.page-header--nojs .navigation__wrapper {
+  position: static;
+  transform: translateY(0);
+}
+
+.page-header--nojs .navigation-toggle {
+  display: none;
+}
+
+.page-header--nojs .page-header__logo {
+  @media (max-width: @mobile-only-width) {
+    left: 25px;
+    width: 67px;
+    height: 56px;
+    transform: none;
+    background-image: url("../img/sedona-logo-nojs.svg");
+    background-size: 67px 56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+}
+
+.page-header--nojs .page-header__logo-image {
+  @media (max-width: @mobile-only-width) {
+    display: none;
+  }
+}
