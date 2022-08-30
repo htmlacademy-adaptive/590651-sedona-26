@@ -55,134 +55,124 @@
           <h2 class="catalog__title title">Фото и видео</h2>
           <p class="catalog__description description">Не можете решиться на путешествие из-за курса?<br>&nbsp;Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
-        <div class="catalog__wrapper">
-          <ul class="catalog__list">
-            <li class="catalog__item catalog-card">
-              <div class="catalog-card__wrapper">
-                <div class="catalog-card__image-wrapper">
-                  <a href="#" class="catalog-card__link">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-1-desktop.webp 1x, img/catalog-photo-1-desktop@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-1-tablet.webp 1x, img/catalog-photo-1-tablet@2x.webp 2x" type="image/webp">
-                      <source srcset="img/catalog-photo-1-mobile.webp 1x, img/catalog-photo-1-mobile@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-1-desktop.jpg 1x, img/catalog-photo-1-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-1-tablet.jpg 1x, img/catalog-photo-1-tablet@2x.jpg 2x">
-                      <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280" srcset="img/catalog-photo-1-mobile@2x.jpg 2x">
-                    </picture>
-                  </a>
-                </div>
-                <div class="catalog-card__content-wrapper">
-                  <h3 class="catalog-card__title title">Неродные просторы</h3>
-                  <span class="catalog-card__author">Автор фото: Борис</span>
-                  <div class="catalog-card__like">
-                    <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
-                      <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
-                        <use href="img/sprite.svg#like-icon"></use>
-                      </svg>
-                    </button>
-                    <b class="catalog-card__likes-amount likes-amount">
-                      <span class="catalog-card__likes">1350</span>
-                      <span class="visually-hidden">пользователям понравилось.</span>
-                    </b>
-                  </div>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-card catalog-card--wide">
+            <div class="catalog-card__wrapper">
+              <a href="#" class="catalog-card__link">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-1-desktop.webp 1x, img/catalog-photo-1-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-1-tablet.webp 1x, img/catalog-photo-1-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/catalog-photo-1-mobile.webp 1x, img/catalog-photo-1-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-1-desktop.jpg 1x, img/catalog-photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-1-tablet.jpg 1x, img/catalog-photo-1-tablet@2x.jpg 2x">
+                  <img class="catalog-card__image" src="img/catalog-photo-1-mobile.jpg" alt="Неродные просторы." width="280" height="280" srcset="img/catalog-photo-1-mobile@2x.jpg 2x">
+                </picture>
+              </a>
+              <div class="catalog-card__content-wrapper">
+                <h3 class="catalog-card__title title">Неродные просторы</h3>
+                <span class="catalog-card__author">Автор фото: Борис</span>
+                <div class="catalog-card__like">
+                  <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
+                    <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
+                      <use href="img/sprite.svg#like-icon"></use>
+                    </svg>
+                  </button>
+                  <b class="catalog-card__likes-amount likes-amount">
+                    <span class="catalog-card__likes">1350</span>
+                    <span class="visually-hidden">пользователям понравилось.</span>
+                  </b>
                 </div>
               </div>
-            </li>
-            <li class="catalog__item catalog-card">
-              <div class="catalog-card__wrapper">
-                <div class="catalog-card__image-wrapper">
-                  <a href="#" class="catalog-card__link">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-2-desktop.webp 1x, img/catalog-photo-2-desktop@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-2-tablet.webp 1x, img/catalog-photo-2-tablet@2x.webp 2x" type="image/webp">
-                      <source srcset="img/catalog-photo-2-mobile.webp 1x, img/catalog-photo-2-mobile@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-2-desktop.jpg 1x, img/catalog-photo-2-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-2-tablet.jpg 1x, img/catalog-photo-2-tablet@2x.jpg 2x">
-                      <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280" srcset="img/catalog-photo-2-mobile@2x.jpg 2x">
-                    </picture>
-                  </a>
-                </div>
-                <div class="catalog-card__content-wrapper">
-                  <h3 class="catalog-card__title title">Местная растительность</h3>
-                  <span class="catalog-card__author">Автор фото: Сергей</span>
-                  <div class="catalog-card__like">
-                    <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
-                      <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
-                        <use href="img/sprite.svg#like-icon"></use>
-                      </svg>
-                    </button>
-                    <b class="catalog-card__likes-amount likes-amount">
-                      <span class="catalog-card__likes">143</span>
-                      <span class="visually-hidden">пользователям понравилось.</span>
-                    </b>
-                  </div>
+            </div>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a href="#" class="catalog-card__link">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-2-desktop.webp 1x, img/catalog-photo-2-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-2-tablet.webp 1x, img/catalog-photo-2-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/catalog-photo-2-mobile.webp 1x, img/catalog-photo-2-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-2-desktop.jpg 1x, img/catalog-photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-2-tablet.jpg 1x, img/catalog-photo-2-tablet@2x.jpg 2x">
+                  <img class="catalog-card__image" src="img/catalog-photo-2-mobile.jpg" alt="Местная растительность." width="280" height="280" srcset="img/catalog-photo-2-mobile@2x.jpg 2x">
+                </picture>
+              </a>
+              <div class="catalog-card__content-wrapper">
+                <h3 class="catalog-card__title title">Местная растительность</h3>
+                <span class="catalog-card__author">Автор фото: Сергей</span>
+                <div class="catalog-card__like">
+                  <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
+                    <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
+                      <use href="img/sprite.svg#like-icon"></use>
+                    </svg>
+                  </button>
+                  <b class="catalog-card__likes-amount likes-amount">
+                    <span class="catalog-card__likes">143</span>
+                    <span class="visually-hidden">пользователям понравилось.</span>
+                  </b>
                 </div>
               </div>
-            </li>
-            <li class="catalog__item catalog-card">
-              <div class="catalog-card__wrapper">
-                <div class="catalog-card__image-wrapper">
-                  <a href="#" class="catalog-card__link">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-3-desktop.webp 1x, img/catalog-photo-3-desktop@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-3-tablet.webp 1x, img/catalog-photo-3-tablet@2x.webp 2x" type="image/webp">
-                      <source srcset="img/catalog-photo-3-mobile.webp 1x, img/catalog-photo-3-mobile@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-3-desktop.jpg 1x, img/catalog-photo-3-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-3-tablet.jpg 1x, img/catalog-photo-3-tablet@2x.jpg 2x">
-                      <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280" srcset="img/catalog-photo-3-mobile@2x.jpg 2x">
-                    </picture>
-                  </a>
-                </div>
-                <div class="catalog-card__content-wrapper catalog-card__content-wrapper--darkgrey">
-                  <h3 class="catalog-card__title title">Дорога на север</h3>
-                  <span class="catalog-card__author">Автор фото: Петр</span>
-                  <div class="catalog-card__like">
-                    <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
-                      <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
-                        <use href="img/sprite.svg#like-icon"></use>
-                      </svg>
-                    </button>
-                    <b class="catalog-card__likes-amount likes-amount">
-                      <span class="catalog-card__likes">96</span>
-                      <span class="visually-hidden">пользователям понравилось.</span>
-                    </b>
-                  </div>
+            </div>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a href="#" class="catalog-card__link">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-3-desktop.webp 1x, img/catalog-photo-3-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-3-tablet.webp 1x, img/catalog-photo-3-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/catalog-photo-3-mobile.webp 1x, img/catalog-photo-3-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-3-desktop.jpg 1x, img/catalog-photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-3-tablet.jpg 1x, img/catalog-photo-3-tablet@2x.jpg 2x">
+                  <img class="catalog-card__image" src="img/catalog-photo-3-mobile.jpg" alt="Дорога на север." width="280" height="280" srcset="img/catalog-photo-3-mobile@2x.jpg 2x">
+                </picture>
+              </a>
+              <div class="catalog-card__content-wrapper catalog-card__content-wrapper--darkgrey">
+                <h3 class="catalog-card__title title">Дорога на север</h3>
+                <span class="catalog-card__author">Автор фото: Петр</span>
+                <div class="catalog-card__like">
+                  <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
+                    <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
+                      <use href="img/sprite.svg#like-icon"></use>
+                    </svg>
+                  </button>
+                  <b class="catalog-card__likes-amount likes-amount">
+                    <span class="catalog-card__likes">96</span>
+                    <span class="visually-hidden">пользователям понравилось.</span>
+                  </b>
                 </div>
               </div>
-            </li>
-            <li class="catalog__item catalog-card">
-              <div class="catalog-card__wrapper">
-                <div class="catalog-card__image-wrapper">
-                  <a href="#" class="catalog-card__link">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-4-desktop.webp 1x, img/catalog-photo-4-desktop@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-4-tablet.webp 1x, img/catalog-photo-4-tablet@2x.webp 2x" type="image/webp">
-                      <source srcset="img/catalog-photo-4-mobile.webp 1x, img/catalog-photo-4-mobile@2x.webp 2x" type="image/webp">
-                      <source media="(min-width: 1200px)" srcset="img/catalog-photo-4-desktop.jpg 1x, img/catalog-photo-4-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/catalog-photo-4-tablet.jpg 1x, img/catalog-photo-4-tablet@2x.jpg 2x">
-                      <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280" srcset="img/catalog-photo-4-mobile@2x.jpg 2x">
-                    </picture>
-                  </a>
-                </div>
-                <div class="catalog-card__content-wrapper">
-                  <h3 class="catalog-card__title title">Мост дьявола</h3>
-                  <span class="catalog-card__author">Автор фото: Антон</span>
-                  <div class="catalog-card__like">
-                    <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
-                      <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
-                        <use href="img/sprite.svg#like-icon"></use>
-                      </svg>
-                    </button>
-                    <b class="catalog-card__likes-amount likes-amount">
-                      <span class="catalog-card__likes">254</span>
-                      <span class="visually-hidden">пользователям понравилось.</span>
-                    </b>
-                  </div>
+            </div>
+          </li>
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__wrapper">
+              <a href="#" class="catalog-card__link">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-4-desktop.webp 1x, img/catalog-photo-4-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-4-tablet.webp 1x, img/catalog-photo-4-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/catalog-photo-4-mobile.webp 1x, img/catalog-photo-4-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)" srcset="img/catalog-photo-4-desktop.jpg 1x, img/catalog-photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-photo-4-tablet.jpg 1x, img/catalog-photo-4-tablet@2x.jpg 2x">
+                  <img class="catalog-card__image" src="img/catalog-photo-4-mobile.jpg" alt="Мост дьявола." width="280" height="280" srcset="img/catalog-photo-4-mobile@2x.jpg 2x">
+                </picture>
+              </a>
+              <div class="catalog-card__content-wrapper">
+                <h3 class="catalog-card__title title">Мост дьявола</h3>
+                <span class="catalog-card__author">Автор фото: Антон</span>
+                <div class="catalog-card__like">
+                  <button class="catalog-card__like-button like-button" type="button" aria-label="Поставить лайк">
+                    <svg class="like-button__icon" aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor">
+                      <use href="img/sprite.svg#like-icon"></use>
+                    </svg>
+                  </button>
+                  <b class="catalog-card__likes-amount likes-amount">
+                    <span class="catalog-card__likes">254</span>
+                    <span class="visually-hidden">пользователям понравилось.</span>
+                  </b>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="presentation">
         <div class="presentation__wrapper">
