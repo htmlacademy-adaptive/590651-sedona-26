@@ -1,6 +1,14 @@
 {
- "icons": [
-  { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
-  { "src": "img/favicons/512.png", "type": "image/png", "sizes": "512x512" }
- ]
+  "name": "Седона - чудный городок",
+  "short_name": "Седона",
+  "start_url": ".",
+  "display": "standalone",
+  "prefer_related_applications": true,
+  "background_color": "#ffffff",
+  "theme_color": "#81b3d2",
+  "description": "Сайт ознакомления со славным городком Седона.",
+  "icons": [
+    { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/favicons/512.png", "type": "image/png", "sizes": "512x512" }
+  ]
 }

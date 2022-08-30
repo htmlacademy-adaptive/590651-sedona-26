@@ -1,19 +1,24 @@
 .catalog__header {
-  padding: 30px 20px 20px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 0;
-    border-bottom: none;
+    padding: 66px 0;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 72px;
   }
 }
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -31,7 +36,7 @@
 
 .catalog__list {
   .list();
-  padding-top: 20px;
+  padding: 0;
   align-items: center;
 
   @media (min-width: @tablet-width) {

@@ -4,23 +4,97 @@
 
   &--background-blue {
     background-color: @main-color;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-column: span 3;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &--background-gray {
     background-color: #eeeeee;
+
+    @media (max-width: @mobile-only-width) {
+      padding: 0 14px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 18px 0;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 38px;
+    }
+  }
+
+  &--background-triangle {
+    @media (max-width: @mobile-only-width) {
+      padding-top: 40px;
+      background-image: url("../img/down-directed-triangle.svg");
+      background-position: top;
+      background-size: 100% 37px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.advantages-item__wrapper {
+  .flex();
+  padding: 30px 20px 40px;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px;
+  }
+
+  &--bordered {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 24px 20px 26px;
+
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &--bordered-last {
+    border-bottom: none;
   }
 }
 
 .advantages-item__text {
+  br {
+    display: none;
+  }
+
   &--white {
     color: @white;
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      padding: 0 15px;
+    }
+  }
+
+  &--no-tablet-break {
+    br {
+      display: block;
+
+      @media (min-width: @tablet-width) and (max-width: 1199px) {
+        display: none;
+      }
+    }
   }
 
   &--tablet-break {
-    br {
-      display: none;
+    padding: 0 10px;
 
-      @media (min-width: @tablet-width) and (max-width: 1199px) {
+    @media (min-width: @tablet-width) {
+      padding: 0 20px;
+
+      br {
         display: block;
       }
     }
@@ -28,11 +102,36 @@
 
   &--desktop-break {
     br {
-      display: none;
-
       @media (min-width: @desktop-width) {
         display: block;
       }
     }
+  }
+}
+
+.advantages-item__features {
+  display: grid;
+  padding: 25px 20px 62px;
+  row-gap: 24px;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+
+.advantages-item__image {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.advantages-item__image--bridge {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
   }
 }

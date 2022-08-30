@@ -1,10 +1,16 @@
 .presentation__wrapper {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: @mobile-only-width) {
+    padding-top: 18px;
+    padding-bottom: 5px;
+  }
 }
 
 .presentation__description {
   padding: 0 20px;
-  margin: 40px 0;
+  margin: 25px 0 36px;
 
   br {
     display: none;
@@ -16,6 +22,10 @@
     br {
       display: block;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 30px 0 88px;
   }
 }
 
@@ -29,6 +39,14 @@
   display: flex;
   position: relative;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 92px;
+  }
 }
 
 .presentation__video-link:hover + .presentation__video-button {
@@ -48,6 +66,7 @@
   display: block;
   width: 48px;
   height: 54px;
+  padding: 0;
   border: none;
   transform: translate(-50%, -50%);
   background-color: transparent;

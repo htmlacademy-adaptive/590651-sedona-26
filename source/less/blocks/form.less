@@ -1,27 +1,38 @@
 .form__header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 24px;
-  padding: 0 20px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 0;
-    border-bottom: none;
+    padding: 64px 0;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 114px 0 68px;
+  }
+}
+
+.form__feedback {
+  margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
 .form__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .form__description {
-  margin-bottom: 28px;
-
   br {
     display: none;
 

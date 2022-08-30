@@ -2,14 +2,14 @@
   .flex();
 
   @media (min-width: @tablet-width) {
-    &:first-child {
+    &--wide {
       grid-column: 1 / -1;
     }
   }
 }
 
 .catalog-card__wrapper {
-  padding: 24px 20px;
+  padding: 24px 20px 26px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -29,6 +29,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     padding: 20px;
+    padding-bottom: 15px;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, min-content);
     background-color: #f2f2f2;
@@ -57,16 +58,18 @@
 }
 
 .catalog-card__title {
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
 
   @media (min-width: @tablet-width) {
-    font-size: 14px;
     text-align: left;
     margin: 0;
   }
 }
 
 .catalog-card__author {
+  font-size: 14px;
   color: #333333;
   margin-bottom: 10px;
 
@@ -80,7 +83,7 @@
   }
 }
 
-.catalog-card__like-button__wrapper {
+.catalog-card__like {
   display: flex;
   padding: 0;
   align-items: center;
@@ -99,31 +102,6 @@
 
   &:focus-visible {
     outline: 2px solid @button-active;
-  }
-}
-
-.catalog-card__like-button__icon {
-  margin-right: 20px;
-  opacity: 0.3;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: @desktop-width) {
-    opacity: 1;
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &:active {
-      opacity: 0.4;
-    }
   }
 }
 
