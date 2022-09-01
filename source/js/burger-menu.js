@@ -1,14 +1,9 @@
 // Burger menu toggle
 const burgerToggle = document.querySelector('.navigation-toggle');
-const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
 const mobileNavList = document.querySelector('.navigation__wrapper');
 const header = document.querySelector('.page-header');
 
 header.classList.remove('page-header--nojs');
-
-burgerToggleLines[0].classList.remove('navigation-toggle__line-first--open');
-burgerToggleLines[1].classList.remove('navigation-toggle__line-second--open');
-burgerToggleLines[2].classList.remove('navigation-toggle__line-third--open');
 
 burgerToggle.addEventListener('click', () => {
 
@@ -20,7 +15,5 @@ burgerToggle.addEventListener('click', () => {
     burgerToggle.setAttribute('aria-label', 'Открыть меню.');
   }
 
-  burgerToggleLines[0].classList.toggle('navigation-toggle__line-first--open');
-  burgerToggleLines[1].classList.toggle('navigation-toggle__line-second--open');
-  burgerToggleLines[2].classList.toggle('navigation-toggle__line-third--open');
+  burgerToggle.classList.toggle('navigation-toggle--opened');
 });
