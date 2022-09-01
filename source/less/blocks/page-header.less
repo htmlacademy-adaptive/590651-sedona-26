@@ -19,16 +19,6 @@
   margin-left: auto;
 }
 
-
-.page-header--nojs .navigation__wrapper {
-  position: static;
-  transform: translateY(0);
-}
-
-.page-header--nojs .navigation-toggle {
-  display: none;
-}
-
 .page-header--nojs .page-header__logo {
   @media (max-width: @mobile-only-width) {
     left: 25px;
@@ -47,4 +37,13 @@
   @media (max-width: @mobile-only-width) {
     display: none;
   }
+}
+
+.page-header--nojs .page-header__navigation-toggle {
+  display: none;
+}
+
+.page-header--nojs .page-header__navigation-list {
+  position: static;
+  transform: translateY(0);
 }

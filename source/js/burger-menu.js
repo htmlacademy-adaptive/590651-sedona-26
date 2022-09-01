@@ -1,8 +1,8 @@
 // Burger menu toggle
 const burgerToggle = document.querySelector('.navigation-toggle');
 const burgerToggleLines = document.querySelectorAll('.navigation-toggle__line');
-const header = document.querySelector('.page-header');
 const mobileNavList = document.querySelector('.navigation__wrapper');
+const header = document.querySelector('.page-header');
 
 header.classList.remove('page-header--nojs');
 
