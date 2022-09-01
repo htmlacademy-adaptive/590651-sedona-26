@@ -15,17 +15,17 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body page-body">
-    <header class="page-header">
-      <a class="page-header__logo page-header__logo--nojs" href="index.html">
-        <img class="page-header__logo-image page-header__logo-image--nojs" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
+    <header class="page-header page-header--nojs">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="page-header__navigation navigation">
-        <button class="navigation__toggle navigation-toggle navigation-toggle--nojs" type="button" aria-label="Открыть меню.">
+        <button class="page-header__navigation-toggle navigation__toggle navigation-toggle" type="button" aria-label="Открыть меню.">
           <span class="navigation-toggle__line navigation-toggle__line-first navigation-toggle__line-first--open"></span>
           <span class="navigation-toggle__line navigation-toggle__line-second navigation-toggle__line-second--open"></span>
           <span class="navigation-toggle__line navigation-toggle__line-third navigation-toggle__line-third--open"></span>
         </button>
-        <div class="navigation__wrapper navigation__wrapper--nojs">
+        <div class="page-header__navigation-list navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Главная</a>
@@ -97,19 +97,19 @@
           <fieldset class="feedback-form__fieldset feedback-form__fieldset-impression">
             <legend class="feedback-form__fieldset-name feedback-form__fieldset-name--bordered feedback-form__fieldset-name--impression">Ваше общее впечатление:</legend>
             <div class="feedback-form__wrapper feedback-form__wrapper--impression">
-              <label class="feedback-form__item-wrapper form-item form-item--radio" for="impression-positive">
-                <input class="radio visually-hidden" type="radio" value="Скорее положительное" name="Общее впечатление" id="impression-positive" checked>
-                <span class="form-item__input form-item__input-radio"></span>
+              <label class="feedback-form__item-wrapper form-item form-item--radio radio" for="impression-positive">
+                <input class="radio__hidden visually-hidden" type="radio" value="Скорее положительное" name="Общее впечатление" id="impression-positive" checked>
+                <span class="radio__custom form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Скорее положительное</span>
               </label>
-              <label class="feedback-form__item-wrapper form-item form-item--radio" for="impression-negative">
-                <input class="radio visually-hidden" type="radio" value="Скорее отрицательное" name="Общее впечатление" id="impression-negative">
-                <span class="form-item__input form-item__input-radio"></span>
+              <label class="feedback-form__item-wrapper form-item form-item--radio radio" for="impression-negative">
+                <input class="radio__hidden visually-hidden" type="radio" value="Скорее отрицательное" name="Общее впечатление" id="impression-negative">
+                <span class="radio__custom form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Скорее отрицательное</span>
               </label>
-              <label class="feedback-form__item-wrapper form-item form-item--radio" for="impression-neutral">
-                <input class="radio visually-hidden" type="radio" value="Затрудняюсь ответить" name="Общее впечатление" id="impression-neutral">
-                <span class="form-item__input form-item__input-radio"></span>
+              <label class="feedback-form__item-wrapper form-item form-item--radio radio" for="impression-neutral">
+                <input class="radio__hidden visually-hidden" type="radio" value="Затрудняюсь ответить" name="Общее впечатление" id="impression-neutral">
+                <span class="radio__custom form-item__input form-item__input-radio"></span>
                 <span class="form-item__name form-item__name--bold">Затрудняюсь ответить</span>
               </label>
             </div>
@@ -201,7 +201,7 @@
       <div class="modal-container__item modal-success">
         <div class="modal-container__message modal-success__message">
           <h3 class="modal-container__title title">Ваш отзыв отправлен!</h3>
-          <p class="modal-container__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal-container__description modal-container__description--mobile-break description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal-container__inner-wrapper modal-container__inner-wrapper--grey">
           <button class="modal-container__button button modal-success__button" type="button">Закрыть окно</button>
@@ -210,6 +210,5 @@
     </div>
     <script src="js/burger-menu.js"></script>
     <script src="js/form-validation.js"></script>
-    <script src="js/navigation-nojs.js"></script>
   </body>
 </html>

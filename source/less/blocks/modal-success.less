@@ -2,21 +2,34 @@
   bottom: 30%;
   padding: 0;
 
+  @media (max-width: @mobile-width) {
+    padding-top: 38px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 640px;
   }
 }
 
 .modal-success__message {
+  @media (max-width: @mobile-width) {
+    margin-bottom: 50px;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 34px 98px;
+    padding: 40px 98px 36px;
+    margin-bottom: 0;
   }
 }
 
 .modal-success__button {
   padding: 0 60px;
 
+  @media (max-width: @mobile-width) {
+    padding: 0 76px;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 0 140px;
+    padding: 0 154px;
   }
 }

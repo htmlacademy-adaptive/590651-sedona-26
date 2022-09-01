@@ -2,13 +2,20 @@
   top: 116px;
   padding-bottom: 30px;
 
+  @media (max-width: @mobile-width) {
+    padding: 45px 50px 35px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 400px;
+    padding: 46px 30px 48px;
   }
 }
 
 .modal-error__button {
-
-  
   padding: 0 120px;
+
+  @media (max-width: @mobile-width) {
+    padding: 0 77px;
+  }
 }
