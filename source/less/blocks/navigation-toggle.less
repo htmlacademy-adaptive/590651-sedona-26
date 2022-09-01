@@ -28,20 +28,36 @@
   transition: 0.3s;
 }
 
-.navigation-toggle__line:not(:last-of-type) {
-  margin-bottom: 5px;
+.navigation-toggle__line::before {
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin-top: -10px;
+  background-color: @main-color;
+  transition: 0.3s;
+  content: "";
 }
 
-.navigation-toggle__line-first--open {
-  transform: rotate(45deg) translate3d(8px, 5px, 0);
+.navigation-toggle__line::after {
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin-top: 15px;
+  background-color: @main-color;
+  transition: 0.3s;
+  content: "";
+}
+
+.navigation-toggle--opened .navigation-toggle__line {
+  background-color: transparent;
+}
+
+.navigation-toggle--opened .navigation-toggle__line::before {
+  transform: translate3d(0, 9px, 0) rotate(45deg);
   background-color: @white;
 }
 
-.navigation-toggle__line-second--open {
-  transform: scale(0);
-}
-
-.navigation-toggle__line-third--open {
-  transform: rotate(-45deg) translate3d(8px, -5px, 0);
+.navigation-toggle--opened .navigation-toggle__line::after {
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
   background-color: @white;
 }
