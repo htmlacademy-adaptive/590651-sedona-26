@@ -1,8 +1,33 @@
+.map {
+  position: relative;
+}
+
 .map__iframe {
   display: block;
   width: 100%;
   margin-bottom: 16px;
   border: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.map__image {
+  display: none;
+
+  &--nojs {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 12px;
